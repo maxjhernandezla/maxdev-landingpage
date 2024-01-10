@@ -1,11 +1,15 @@
 import './Navbar.scss';
-import logo from '../../assets/logo.png';
+
 const Navbar = () => {
   return (
     <div className="navbar">
       <div className="navbarContainer">
         <div className="left">
-          <img src={logo} alt="logo" className="logo" />
+          <img
+            src="https://res.cloudinary.com/maxjhernandez/image/upload/v1704913023/logo_c9gzri.png"
+            alt="logo"
+            className="logo"
+          />
         </div>
         <div className="right">
           <a className="link">Home</a>

@@ -1,5 +1,4 @@
 import './Home.scss';
-import video from '../../assets/front-video.mp4';
 import AboutUs from '../AboutUs/AboutUs';
 import Navbar from '../../components/Navbar/Navbar';
 import Products from '../Products/Products';
@@ -8,7 +7,12 @@ const Home = () => {
     <div className="home">
       <Navbar />
       <div className="homeContainer">
-        <video src={video} autoPlay loop muted></video>
+        <video
+          src="https://res.cloudinary.com/maxjhernandez/video/upload/v1704913058/front-video_f1qngl.mp4"
+          autoPlay
+          loop
+          muted
+        ></video>
         <div className="content">
           <h1>MAXDEV</h1>
           <p>

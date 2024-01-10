@@ -1,11 +1,14 @@
 import './AboutUs.scss';
-import machine from '../../assets/machine.png';
 const AboutUs = () => {
   return (
     <div className="aboutUs">
       <div className="aboutUsContainer">
         <div className="left">
-          <img src={machine} alt="img" className="img" />
+          <img
+            src="https://res.cloudinary.com/maxjhernandez/image/upload/v1704913022/machine_nwumiz.png"
+            alt="img"
+            className="img"
+          />
         </div>
         <div className="right">
           <h1>About us</h1>
