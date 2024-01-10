@@ -1,0 +1,38 @@
+.navbar {
+  z-index: 999;
+  background-color: #00000039;
+  display: flex;
+  justify-content: center;
+  position: fixed; /* Cambiado a fixed para que siempre esté en la parte superior de la pantalla */
+  top: 0;
+  width: 100%;
+  .navbarContainer {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+    width: 1024px;
+    align-self: center;
+    .left {
+      .logo {
+        height: 75px;
+        width: 75px;
+        object-fit: cover;
+        margin: 10px;
+        cursor: pointer;
+      }
+    }
+    .right {
+      .link {
+        margin-left: 15px;
+        color: white;
+        font-size: 20px;
+        font-weight: normal;
+        cursor: pointer;
+        &:hover {
+          color: #39cccc;
+        }
+      }
+    }
+  }
+}

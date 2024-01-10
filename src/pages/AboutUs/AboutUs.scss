@@ -1,0 +1,48 @@
+.aboutUs {
+  height: 70vh;
+  background-image: url('../../assets/about-us.png');
+  background-size: cover; // Ajusta el tamaño para cubrir completamente el contenedor
+  background-position: center; // Centra la imagen
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  .aboutUsContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 1400px;
+    .left {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 512px;
+      .img {
+        width: 400px;
+        height: 400px;
+      }
+    }
+    .right {
+      width: 512px;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: center;
+      h1 {
+        font-size: 72px;
+        color: white;
+        font-weight: 400;
+        margin-bottom: 15px;
+      }
+      .pContainer {
+        width: 400px;
+        p {
+          font-size: 18px;
+          color: white;
+          font-weight: 300;
+          line-height: 1.3;
+        }
+      }
+    }
+  }
+}
