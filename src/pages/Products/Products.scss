@@ -1,6 +1,72 @@
 .products {
-  height: 70vh;
+  height: 100vh;
   background-image: url('https://res.cloudinary.com/maxjhernandez/image/upload/v1704913022/products_dinzn0.png');
   background-size: cover; // Ajusta el tamaño para cubrir completamente el contenedor
   background-position: center; // Centra la imagen
+  display: flex;
+  justify-content: flex-start; // Espaciado entre los productos
+  align-items: center;
+  flex-direction: column;
+  .productsTitle {
+    margin-top: 40px;
+    margin-bottom: 40px;
+    h2 {
+      color: #00d1cd;
+      font-size: 82px;
+      font-weight: 300;
+    }
+  }
+  .productsContainer {
+    gap: 30px;
+    width: 1024px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    .product {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      height: max-content;
+      min-height: 500px;
+      width: 250px;
+      border-radius: 0 0 10px 10px;
+      &:hover {
+        box-shadow: -2px 11px 33px 0px rgba(0, 209, 205, 0.69);
+        -webkit-box-shadow: -2px 11px 33px 0px rgba(0, 209, 205, 0.69);
+        -moz-box-shadow: -2px 11px 33px 0px rgba(0, 209, 205, 0.69);
+      }
+      .imgContainer {
+        height: 250px;
+        width: 250px;
+        display: flex;
+
+        .productImg {
+          width: 250px;
+          height: 250px;
+          object-fit: contain;
+        }
+      }
+      .description {
+        background-color: rgb(0, 209, 205);
+        border-radius: 0 0 10px 10px;
+        min-height: 400px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        h3 {
+          color: #111111;
+          padding: 15px;
+        }
+        ul {
+          li {
+            padding: 10px;
+            color: #111111;
+            text-decoration: none;
+            list-style-type: none;
+          }
+        }
+      }
+    }
+  }
 }
