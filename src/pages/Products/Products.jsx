@@ -10,7 +10,7 @@ const Products = () => {
         <div className="product">
           <div className="imgContainer">
             <img
-              src="https://res.cloudinary.com/maxjhernandez/image/upload/v1704914262/computer-154114_1920_jrv59r.png"
+              src="https://res.cloudinary.com/maxjhernandez/image/upload/v1704993204/landingpage3_bx4yh7.jpg"
               alt="landing-page"
               className="productImg"
             />
@@ -33,8 +33,8 @@ const Products = () => {
         <div className="product">
           <div className="imgContainer">
             <img
-              src="https://res.cloudinary.com/maxjhernandez/image/upload/v1704919702/Disen%CC%83o_sin_ti%CC%81tulo_4_skwg00.png"
-              alt="corporate-website"
+              src="https://res.cloudinary.com/maxjhernandez/image/upload/v1704993207/webcorporate3_ayjtvp.jpg"
+              alt="corporate-web"
               className="productImg"
             />
           </div>
@@ -56,8 +56,8 @@ const Products = () => {
         <div className="product">
           <div className="imgContainer">
             <img
-              src="https://res.cloudinary.com/maxjhernandez/image/upload/v1704919706/Disen%CC%83o_sin_ti%CC%81tulo_5_kfwcm9.png"
-              alt="landing-page"
+              src="https://res.cloudinary.com/maxjhernandez/image/upload/v1704993203/ecommerce3_jlfyja.jpg"
+              alt="ecommerce"
               className="productImg"
             />
           </div>

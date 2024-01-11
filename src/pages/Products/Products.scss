@@ -1,6 +1,6 @@
 .products {
   height: 100vh;
-  background-image: url('https://res.cloudinary.com/maxjhernandez/image/upload/v1704913022/products_dinzn0.png');
+  background-image: url('https://res.cloudinary.com/maxjhernandez/image/upload/v1704992946/Disen%CC%83o_sin_ti%CC%81tulo_6_faddxg.png');
   background-size: cover; // Ajusta el tamaño para cubrir completamente el contenedor
   background-position: center; // Centra la imagen
   display: flex;
@@ -11,7 +11,7 @@
     margin-top: 40px;
     margin-bottom: 40px;
     h2 {
-      color: #00d1cd;
+      color: #357fbf;
       font-size: 82px;
       font-weight: 300;
     }
@@ -32,23 +32,24 @@
       width: 250px;
       border-radius: 0 0 10px 10px;
       &:hover {
-        box-shadow: -2px 11px 33px 0px rgba(0, 209, 205, 0.69);
-        -webkit-box-shadow: -2px 11px 33px 0px rgba(0, 209, 205, 0.69);
-        -moz-box-shadow: -2px 11px 33px 0px rgba(0, 209, 205, 0.69);
+        box-shadow: -2px 11px 33px 0px #357fbf;
+        -webkit-box-shadow: -2px 11px 33px 0px #357fbf;
+        -moz-box-shadow: -2px 11px 33px 0px #357fbf;
       }
       .imgContainer {
         height: 250px;
         width: 250px;
         display: flex;
+        margin-bottom: 25px;
 
         .productImg {
-          width: 250px;
           height: 250px;
-          object-fit: contain;
+          width: 100%;
+          object-fit: cover;
         }
       }
       .description {
-        background-color: rgb(0, 209, 205);
+        background-color: #50a6f091;
         border-radius: 0 0 10px 10px;
         min-height: 400px;
         display: flex;
