@@ -11,6 +11,7 @@ const AboutUs = () => {
           />
         </div>
         <div className="right">
+          <p className="topTitle">Purpose and strategic objectives</p>
           <h1>About us</h1>
           <div className="pContainer">
             <p>
