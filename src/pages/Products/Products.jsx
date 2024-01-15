@@ -4,7 +4,7 @@ const Products = () => {
   return (
     <div className="products">
       <div className="productsTitle">
-        <h2>Our Products</h2>
+        <h2>Products</h2>
       </div>
       <div className="productsContainer">
         <div className="product">
@@ -33,7 +33,7 @@ const Products = () => {
         <div className="product">
           <div className="imgContainer">
             <img
-              src="https://res.cloudinary.com/maxjhernandez/image/upload/v1704993207/webcorporate3_ayjtvp.jpg"
+              src="https://res.cloudinary.com/maxjhernandez/image/upload/v1704993208/webcorporate2_ii8bp8.jpg"
               alt="corporate-web"
               className="productImg"
             />
