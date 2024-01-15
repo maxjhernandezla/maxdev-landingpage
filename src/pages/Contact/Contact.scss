@@ -1,7 +1,7 @@
 .contact {
   display: flex;
   flex-direction: column;
-  min-height: max-content;
+  min-height: fit-content;
   .contactContainer {
     width: 100%;
     position: relative; /* Cambiado de absolute a relative */
@@ -94,7 +94,7 @@
 
 @media screen and (max-width: 768px) {
   .contact .contactContainer {
-    height: 100vh;
+    height: 90vh;
   }
   .contact .contactContainer .contentContainer .content .contentLeftAndRight {
     flex-direction: column;
@@ -102,20 +102,8 @@
     align-items: center;
   }
 
-  .contact
-    .contactContainer
-    .contentContainer
-    .content
-    .contentLeftAndRight
-    .left
-    p,
-  .contact
-    .contactContainer
-    .contentContainer
-    .content
-    .contentLeftAndRight
-    .formContainer {
-    padding: 15px;
+  .contact .contactContainer .contentContainer .content .contentLeftAndRight {
+    margin: 0 25px 0 25px;
   }
 
   .contact

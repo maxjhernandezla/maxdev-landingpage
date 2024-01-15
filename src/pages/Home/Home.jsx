@@ -28,12 +28,8 @@ const Home = () => {
       <div className="productsContainer">
         <Products />
       </div>
-
       <Contact />
-
-      <div className="footerContainer">
-        <Footer />
-      </div>
+      <Footer />
     </div>
   );
 };
