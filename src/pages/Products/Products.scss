@@ -72,3 +72,18 @@
     }
   }
 }
+
+@media screen and (max-width: 1004px) {
+  .products {
+    height: max-content;
+  }
+  .products .productsContainer {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: fit-content;
+  }
+  .products .productsContainer .product {
+    margin-bottom: 40px;
+  }
+}

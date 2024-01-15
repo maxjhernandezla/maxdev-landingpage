@@ -42,3 +42,17 @@
     }
   }
 }
+
+@media screen and (max-width: 1200px) {
+  .navbar .navbarContainer .right {
+    display: none;
+  }
+  .navbar {
+    width: 100vw;
+  }
+
+  .navbar .navbarContainer {
+    width: 100vw;
+    justify-content: center;
+  }
+}

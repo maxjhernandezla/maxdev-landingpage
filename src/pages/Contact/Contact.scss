@@ -91,3 +91,40 @@
     }
   }
 }
+
+@media screen and (max-width: 768px) {
+  .contact .contactContainer {
+    height: 50vh;
+  }
+  .contact .contactContainer .contentContainer .content .contentLeftAndRight {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .contact
+    .contactContainer
+    .contentContainer
+    .content
+    .contentLeftAndRight
+    .left
+    p,
+  .contact
+    .contactContainer
+    .contentContainer
+    .content
+    .contentLeftAndRight
+    .formContainer {
+    padding: 15px;
+  }
+
+  .contact
+    .contactContainer
+    .contentContainer
+    .content
+    .contentLeftAndRight
+    .right
+    .formContainer {
+    padding: 10px;
+  }
+}
