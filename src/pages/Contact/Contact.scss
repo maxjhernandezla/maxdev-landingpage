@@ -1,8 +1,8 @@
 .contact {
   display: flex;
   flex-direction: column;
+  min-height: max-content;
   .contactContainer {
-    height: 100%;
     width: 100%;
     position: relative; /* Cambiado de absolute a relative */
     z-index: 0;
@@ -20,7 +20,6 @@
       height: 100%;
       justify-content: center;
       .content {
-        height: 100%;
         display: flex;
         flex-direction: column;
         gap: 10px;
@@ -31,12 +30,11 @@
           font-weight: 400;
           margin-bottom: 15px;
         }
-        .formContainer {
+        .contentLeftAndRight {
           display: flex;
           flex-direction: row;
           .left {
             width: 300px;
-            height: 300px;
             background: #154b76;
             p {
               padding: 25px 30px;
@@ -48,7 +46,6 @@
           }
           .right {
             width: 300px;
-            height: 300px;
             background: #111111;
             .formContainer {
               display: flex;

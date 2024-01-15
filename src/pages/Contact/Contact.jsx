@@ -12,7 +12,7 @@ const Contact = () => {
         <div className="contentContainer">
           <div className="content">
             <h1>Contact us</h1>
-            <div className="formContainer">
+            <div className="contentLeftAndRight">
               <div className="left">
                 <p>
                   Got a project? We've got personalized solutions! Let's chat

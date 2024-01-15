@@ -3,6 +3,7 @@ import AboutUs from '../AboutUs/AboutUs';
 import Navbar from '../../components/Navbar/Navbar';
 import Products from '../Products/Products';
 import Contact from '../Contact/Contact';
+import Footer from '../../components/Footer/Footer';
 const Home = () => {
   return (
     <div className="home">
@@ -27,8 +28,11 @@ const Home = () => {
       <div className="productsContainer">
         <Products />
       </div>
-      <div className="contactContainer">
-        <Contact />
+
+      <Contact />
+
+      <div className="footerContainer">
+        <Footer />
       </div>
     </div>
   );
