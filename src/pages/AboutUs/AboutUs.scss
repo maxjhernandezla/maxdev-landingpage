@@ -90,7 +90,7 @@
   }
 }
 
-@media screen and (max-width: 762px) {
+@media screen and (max-width: 769px) {
   .aboutUs {
     height: fit-content;
     align-items: flex-start;
@@ -119,4 +119,22 @@
     height: 300px;
     margin: 40px;
   }
+}
+
+@media screen and (max-width: 480px) {
+  .aboutUs {
+    width: 480px;
+  }
+  .aboutUs .aboutUsContainer .left {
+    width: fit-content;
+  }
+  .aboutUs .aboutUsContainer .right {
+    width: fit-content;
+  }
+  // .aboutUs .aboutUsContainer .left {
+  //   width: 480px;
+  // }
+  // .aboutUs .aboutUsContainer .left .pContainer {
+  //   width: fit-content;
+  // }
 }

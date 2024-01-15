@@ -14,7 +14,6 @@
       color: white;
       font-size: 72px;
       font-weight: 400;
-      margin-bottom: 15px;
     }
   }
   .productsContainer {
@@ -85,5 +84,12 @@
   }
   .products .productsContainer .product {
     margin-bottom: 40px;
+  }
+}
+
+@media screen and (max-width: 1004px) {
+  .product .productsContainer .productsTitle h2 {
+    font-size: 60px;
+    margin: 40px;
   }
 }
