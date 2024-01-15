@@ -121,20 +121,27 @@
   }
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 500px) {
   .aboutUs {
-    width: 480px;
+    width: 100%;
   }
-  .aboutUs .aboutUsContainer .left {
-    width: fit-content;
+  .aboutUs .aboutUsContainer {
+    width: 300px;
   }
   .aboutUs .aboutUsContainer .right {
-    width: fit-content;
+    width: 100%;
+    align-items: center;
   }
-  // .aboutUs .aboutUsContainer .left {
-  //   width: 480px;
-  // }
-  // .aboutUs .aboutUsContainer .left .pContainer {
-  //   width: fit-content;
-  // }
+  .aboutUs .aboutUsContainer .left {
+    width: 100%;
+    align-items: center;
+  }
+  .aboutUs .aboutUsContainer .left .img {
+    width: 200px;
+    height: 200px;
+    margin-bottom: 0 0 0 20px;
+  }
+  .aboutUs .aboutUsContainer .right .pContainer {
+    width: 100%;
+  }
 }

@@ -37,3 +37,62 @@
     }
   }
 }
+
+@media screen and (max-width: 1004px) {
+}
+
+@media screen and (max-width: 769px) {
+  .aboutUs {
+    height: fit-content;
+    align-items: flex-start;
+  }
+  .aboutUs .aboutUsContainer {
+    width: fit-content;
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+  }
+  .aboutUs .aboutUsContainer .right {
+    align-items: center;
+  }
+  .aboutUs .aboutUsContainer .right .topTitle {
+    display: none;
+  }
+  .aboutUs .aboutUsContainer .right h1 {
+    margin: 25px;
+    font-size: 60px;
+  }
+  .aboutUs .aboutUsContainer .right .pContainer p {
+    font-size: 14px;
+  }
+  .aboutUs .aboutUsContainer .left .img {
+    width: 300px;
+    height: 300px;
+    margin: 40px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .aboutUs {
+    width: 100%;
+  }
+  .aboutUs .aboutUsContainer {
+    width: 300px;
+  }
+  .aboutUs .aboutUsContainer .right {
+    width: 100%;
+    align-items: center;
+  }
+  .aboutUs .aboutUsContainer .left {
+    width: 100%;
+    align-items: center;
+  }
+  .aboutUs .aboutUsContainer .left .img {
+    width: 200px;
+    height: 200px;
+    margin-bottom: 0 0 0 20px;
+  }
+  .aboutUs .aboutUsContainer .right .pContainer {
+    width: 100%;
+  }
+}
