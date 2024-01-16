@@ -90,7 +90,7 @@
   }
 }
 
-@media screen and (max-width: 769px) {
+@media screen and (max-width: 768px) {
   .aboutUs {
     height: fit-content;
     align-items: flex-start;
@@ -108,7 +108,7 @@
     display: none;
   }
   .aboutUs .aboutUsContainer .right h1 {
-    margin: 25px;
+    margin: 50px 25px 25px 25px;
     font-size: 60px;
   }
   .aboutUs .aboutUsContainer .right .pContainer p {
@@ -137,8 +137,8 @@
     align-items: center;
   }
   .aboutUs .aboutUsContainer .left .img {
-    width: 200px;
-    height: 200px;
+    width: 250px;
+    height: 250px;
     margin-bottom: 0 0 0 20px;
   }
   .aboutUs .aboutUsContainer .right .pContainer {

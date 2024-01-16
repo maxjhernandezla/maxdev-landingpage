@@ -4,6 +4,7 @@ import Navbar from '../../components/Navbar/Navbar';
 import Products from '../Products/Products';
 import Contact from '../Contact/Contact';
 import Footer from '../../components/Footer/Footer';
+
 const Home = () => {
   return (
     <div className="home">
