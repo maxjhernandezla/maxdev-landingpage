@@ -1,16 +1,26 @@
 import './Home.scss';
 import AboutUs from '../AboutUs/AboutUs';
-import Navbar from '../../components/Navbar/Navbar';
 import Products from '../Products/Products';
 import Contact from '../Contact/Contact';
 import Footer from '../../components/Footer/Footer';
 import NewNav from '../../components/Navbar/NewNav';
+import { useRef } from 'react';
 
 const Home = () => {
+  const homeRef = useRef(null);
+  const aboutUsRef = useRef(null);
+  const productsRef = useRef(null);
+  const contactRef = useRef(null);
+  const scrollToRef = {
+    homeRef,
+    aboutUsRef,
+    productsRef,
+    contactRef,
+  };
   return (
     <div className="home">
-      <NewNav />
-      <div className="homeContainer">
+      <NewNav scrollToRef={scrollToRef} />
+      <div className="homeContainer" ref={homeRef}>
         <video
           src="https://res.cloudinary.com/maxjhernandez/video/upload/v1704913058/front-video_f1qngl.mp4"
           autoPlay
@@ -24,13 +34,15 @@ const Home = () => {
           </p>
         </div>
       </div>
-      <div className="aboutUsContainer">
+      <div className="aboutUsContainer" ref={aboutUsRef}>
         <AboutUs />
       </div>
-      <div className="productsContainer">
+      <div className="productsContainer" ref={productsRef}>
         <Products />
       </div>
-      <Contact />
+      <div className="contactContainer" ref={contactRef}>
+        <Contact />
+      </div>
       <Footer />
     </div>
   );

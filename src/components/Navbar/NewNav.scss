@@ -41,13 +41,20 @@
       background-color: #000000;
       z-index: 998; /* Para que aparezca por debajo del navbar */
       align-items: center;
-      gap: 20px;
       padding: 25px;
       height: fit-content;
       .link {
+        padding: 30px;
         font-size: 22px;
         color: #39cccc;
         font-weight: 600;
+        margin: 0;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        &:hover {
+          background-color: #232323cd;
+        }
       }
     }
   }

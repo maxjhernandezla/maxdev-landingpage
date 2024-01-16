@@ -2,12 +2,19 @@ import { useState } from 'react';
 import './NewNav.scss';
 import { FaBars, FaTimes } from 'react-icons/fa';
 
-const NewNav = () => {
+const NewNav = ({ ...scrollToRef }) => {
   const [toggle, setToggle] = useState(false);
   const handleToggle = () => {
     setToggle(!toggle);
   };
 
+  const scrollIntoView = (sectionRef) => {
+    window.scrollTo({
+      top: sectionRef.current.offsetTop - 100,
+      behavior: 'smooth',
+    });
+    setToggle(false);
+  };
   return (
     <nav className={toggle ? 'navbar expanded' : 'navbar'}>
       <div className="left">
@@ -18,10 +25,30 @@ const NewNav = () => {
         />
       </div>
       <div className="right">
-        <a className="link">Home</a>
-        <a className="link">About us</a>
-        <a className="link">Products</a>
-        <a className="link">Contact</a>
+        <a
+          className="link"
+          onClick={() => scrollIntoView(scrollToRef.scrollToRef.homeRef)}
+        >
+          Home
+        </a>
+        <a
+          className="link"
+          onClick={() => scrollIntoView(scrollToRef.scrollToRef.aboutUsRef)}
+        >
+          About us
+        </a>
+        <a
+          className="link"
+          onClick={() => scrollIntoView(scrollToRef.scrollToRef.productsRef)}
+        >
+          Products
+        </a>
+        <a
+          className="link"
+          onClick={() => scrollIntoView(scrollToRef.scrollToRef.contactRef)}
+        >
+          Contact
+        </a>
       </div>
       <div className="toggle-icon" onClick={handleToggle}>
         {toggle ? <FaTimes /> : <FaBars />}
