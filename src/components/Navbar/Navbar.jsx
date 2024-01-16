@@ -1,8 +1,10 @@
+import { useState } from 'react';
 import './Navbar.scss';
-
+import { FaBars, FaTimes } from 'react-icons/fa';
+import { Link } from 'react-router-dom';
 const Navbar = () => {
   return (
-    <div className="navbar">
+    <nav className="navbar">
       <div className="navbarContainer">
         <div className="left">
           <img
@@ -11,14 +13,20 @@ const Navbar = () => {
             className="logo"
           />
         </div>
-        <div className="right">
+        <div ref={navRef} className="right">
           <a className="link">Home</a>
           <a className="link">About us</a>
           <a className="link">Products</a>
           <a className="link">Contact</a>
+          <button>
+            <FaTimes />
+          </button>
         </div>
+        <button>
+          <FaBars />
+        </button>
       </div>
-    </div>
+    </nav>
   );
 };
 

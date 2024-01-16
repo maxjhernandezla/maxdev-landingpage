@@ -4,11 +4,12 @@ import Navbar from '../../components/Navbar/Navbar';
 import Products from '../Products/Products';
 import Contact from '../Contact/Contact';
 import Footer from '../../components/Footer/Footer';
+import NewNav from '../../components/Navbar/NewNav';
 
 const Home = () => {
   return (
     <div className="home">
-      <Navbar />
+      <NewNav />
       <div className="homeContainer">
         <video
           src="https://res.cloudinary.com/maxjhernandez/video/upload/v1704913058/front-video_f1qngl.mp4"
