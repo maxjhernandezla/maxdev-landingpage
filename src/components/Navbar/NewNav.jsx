@@ -10,7 +10,7 @@ const NewNav = ({ ...scrollToRef }) => {
 
   const scrollIntoView = (sectionRef) => {
     window.scrollTo({
-      top: sectionRef.current.offsetTop - 100,
+      top: sectionRef.current.offsetTop,
       behavior: 'smooth',
     });
     setToggle(false);

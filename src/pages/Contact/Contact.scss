@@ -1,7 +1,7 @@
 .contact {
   display: flex;
   flex-direction: column;
-  min-height: fit-content;
+  min-height: 100vh;
   .contactContainer {
     width: 100%;
     position: relative; /* Cambiado de absolute a relative */
@@ -11,6 +11,7 @@
       width: 100%;
       object-fit: cover;
       margin: 0;
+      min-height: 100vh;
     }
     .contentContainer {
       display: flex;
@@ -93,8 +94,14 @@
 }
 
 @media screen and (max-width: 768px) {
-  .contact .contactContainer {
-    height: 90vh;
+  // .contact .contactContainer {
+  //   height: 90vh;
+  // }
+  .contact .contactContainer .contentContainer .content {
+    align-items: center;
+  }
+  .contact .contactContainer .contentContainer .content h1 {
+    font-size: 60px;
   }
   .contact .contactContainer .contentContainer .content .contentLeftAndRight {
     flex-direction: column;
@@ -114,5 +121,30 @@
     .right
     .formContainer {
     padding: 20px;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  .contact .contactContainer {
+    width: 100%;
+  }
+  .contact .contactContainer .content h1 {
+    width: 250px;
+  }
+  .contact
+    .contactContainer
+    .contentContainer
+    .content
+    .contentLeftAndRight
+    .right {
+    width: 250px;
+  }
+  .contact
+    .contactContainer
+    .contentContainer
+    .content
+    .contentLeftAndRight
+    .left {
+    width: 250px;
   }
 }

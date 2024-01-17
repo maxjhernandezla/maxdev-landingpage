@@ -26,6 +26,7 @@ const Home = () => {
           autoPlay
           loop
           muted
+          controls={false}
         ></video>
         <div className="content">
           <h1>MAXDEV</h1>
