@@ -1,13 +1,20 @@
+import React, { useRef } from 'react';
 import './AboutUs.scss';
+import { useInView } from 'react-intersection-observer';
+
 const AboutUs = () => {
+  const [ref, inView] = useInView({
+    triggerOnce: true,
+  });
+
   return (
     <div className="aboutUs">
-      <div className="aboutUsContainer">
+      <div className={`aboutUsContainer ${inView ? 'visible' : ''}`} ref={ref}>
         <div className="left">
           <img
-            src="https://res.cloudinary.com/maxjhernandez/image/upload/v1704913022/machine_nwumiz.png"
+            src="https://res.cloudinary.com/maxjhernandez/image/upload/v1706216516/Disen%CC%83o_sin_ti%CC%81tulo_8_shpqdj.png"
             alt="img"
-            className="img"
+            className={`img ${inView ? 'show' : ''}`}
           />
         </div>
         <div className="right">

@@ -3,12 +3,12 @@ const Contact = () => {
   return (
     <div className="contact">
       <div className="contactContainer">
-        <video
-          src="https://res.cloudinary.com/maxjhernandez/video/upload/v1705332813/circuit_-_27725_Original_ajctf5.mp4"
+        {/* <video
+          src="https://res.cloudinary.com/maxjhernandez/video/upload/v1706220366/technology_-_112792_Original_stlfpw.mp4"
           autoPlay
           loop
           muted
-        ></video>
+        ></video> */}
         <div className="contentContainer">
           <div className="content">
             <h1>Contact us</h1>

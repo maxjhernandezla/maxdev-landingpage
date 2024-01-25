@@ -1,8 +1,9 @@
 .aboutUs {
   height: 100vh;
-  background-image: url('https://res.cloudinary.com/maxjhernandez/image/upload/v1704913022/about-us_edpjmy.png');
-  background-size: cover; // Ajusta el tamaño para cubrir completamente el contenedor
-  background-position: center; // Centra la imagen
+  // background-image: url('https://res.cloudinary.com/maxjhernandez/image/upload/v1704913022/about-us_edpjmy.png');
+  // background-size: cover; // Ajusta el tamaño para cubrir completamente el contenedor
+  // background-position: center; // Centra la imagen
+  background-color: rgba(239, 239, 239, 0.646);
   margin: 0;
   display: flex;
   align-items: center;
@@ -21,7 +22,6 @@
       .img {
         width: 400px;
         height: 400px;
-        animation: rotation 60s linear infinite;
       }
     }
     .right {
@@ -32,13 +32,13 @@
       justify-content: space-evenly;
       h1 {
         font-size: 72px;
-        color: white;
+        color: #0137cc;
         font-weight: 400;
         margin-bottom: 15px;
       }
       .topTitle {
         font-size: 14px;
-        color: white;
+        color: #0137cc;
         font-weight: 300;
         margin-bottom: 25px;
       }
@@ -46,7 +46,7 @@
         width: 400px;
         p {
           font-size: 18px;
-          color: white;
+          color: #0137cc;
           font-weight: 300;
           line-height: 1.3;
           margin-bottom: 15px;
@@ -56,14 +56,14 @@
   }
 }
 
-@keyframes rotation {
-  0% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(360deg);
-  }
-}
+// @keyframes rotation {
+//   0% {
+//     transform: rotate(0deg);
+//   }
+//   100% {
+//     transform: rotate(360deg);
+//   }
+// }
 
 @media screen and (max-width: 1004px) {
   .aboutUs {
@@ -144,4 +144,15 @@
   .aboutUs .aboutUsContainer .right .pContainer {
     width: 100%;
   }
+}
+
+.img {
+  opacity: 0;
+  transform: translateX(-100%);
+  transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+}
+
+.img.show {
+  opacity: 1;
+  transform: translateX(0);
 }
