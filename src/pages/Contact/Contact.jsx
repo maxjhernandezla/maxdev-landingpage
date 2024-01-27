@@ -1,7 +1,17 @@
 import './Contact.scss';
 import { getLanguageData } from '../../helpers/languageHelper';
+import React, { useRef } from 'react';
+import { sendEmail } from '../../helpers/emailHelper';
+
 const Contact = () => {
   const data = getLanguageData();
+
+  const form = useRef();
+
+  const handleSendEmail = async (e) => {
+    e.preventDefault();
+    await sendEmail(form);
+  };
 
   return (
     <div className="contact">
@@ -20,17 +30,21 @@ const Contact = () => {
                 <p>{data.contact.text}</p>
               </div>
               <div className="right">
-                <form className="formContainer">
+                <form
+                  className="formContainer"
+                  ref={form}
+                  onSubmit={handleSendEmail}
+                >
                   <input
                     type="text"
                     className="input"
-                    name="fullname"
+                    name="user_name"
                     placeholder={data.contact.fullname}
                   />
                   <input
                     type="email"
                     className="input"
-                    name="email"
+                    name="user_email"
                     placeholder={data.contact.email}
                   />
                   <textarea
@@ -41,7 +55,9 @@ const Contact = () => {
                     className="message"
                     placeholder={data.contact.message}
                   ></textarea>
-                  <button className="submitBtn">{data.contact.button}</button>
+                  <button type="submit" className="submitBtn">
+                    {data.contact.button}
+                  </button>
                 </form>
               </div>
             </div>
