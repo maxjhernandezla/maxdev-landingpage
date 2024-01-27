@@ -1,0 +1,28 @@
+.languageContainer {
+  display: flex;
+  flex-direction: row;
+  gap: 5px;
+  .spanish {
+    height: 20px;
+    cursor: pointer;
+    .flag {
+      height: 20px;
+      width: 20px;
+
+      border-radius: 50%;
+    }
+  }
+  p {
+    color: white;
+  }
+  .english {
+    height: 20px;
+    cursor: pointer;
+
+    .flag {
+      height: 20px;
+      width: 20px;
+      border-radius: 50%;
+    }
+  }
+}

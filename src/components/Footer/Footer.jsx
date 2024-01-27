@@ -1,9 +1,11 @@
 import './Footer.scss';
+import { getLanguageData } from '../../helpers/languageHelper';
 
 const Footer = () => {
+  const data = getLanguageData();
   return (
     <div className="footer">
-      <p>© 2024 MAXDEV. Todos los derechos reservados.</p>
+      <p>{data.footer.copyright}</p>
     </div>
   );
 };

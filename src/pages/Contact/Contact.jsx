@@ -1,5 +1,8 @@
 import './Contact.scss';
+import { getLanguageData } from '../../helpers/languageHelper';
 const Contact = () => {
+  const data = getLanguageData();
+
   return (
     <div className="contact">
       <div className="contactContainer">
@@ -11,13 +14,10 @@ const Contact = () => {
         ></video> */}
         <div className="contentContainer">
           <div className="content">
-            <h1>Contact us</h1>
+            <h1>{data.contact.title}</h1>
             <div className="contentLeftAndRight">
               <div className="left">
-                <p>
-                  Got a project? We've got personalized solutions! Let's chat
-                  and dive into the details of your case.
-                </p>
+                <p>{data.contact.text}</p>
               </div>
               <div className="right">
                 <form className="formContainer">
@@ -25,13 +25,13 @@ const Contact = () => {
                     type="text"
                     className="input"
                     name="fullname"
-                    placeholder="Fullname"
+                    placeholder={data.contact.fullname}
                   />
                   <input
                     type="email"
                     className="input"
                     name="email"
-                    placeholder="Email"
+                    placeholder={data.contact.email}
                   />
                   <textarea
                     name="message"
@@ -39,9 +39,9 @@ const Contact = () => {
                     cols="30"
                     rows="10"
                     className="message"
-                    placeholder="Your message..."
+                    placeholder={data.contact.message}
                   ></textarea>
-                  <button className="submitBtn">SEND!</button>
+                  <button className="submitBtn">{data.contact.button}</button>
                 </form>
               </div>
             </div>

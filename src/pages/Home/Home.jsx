@@ -3,8 +3,9 @@ import AboutUs from '../AboutUs/AboutUs';
 import Products from '../Products/Products';
 import Contact from '../Contact/Contact';
 import Footer from '../../components/Footer/Footer';
-import NewNav from '../../components/Navbar/NewNav';
+import Navbar from '../../components/Navbar/Navbar';
 import { useRef } from 'react';
+import { getLanguageData } from '../../helpers/languageHelper';
 
 const Home = () => {
   const homeRef = useRef(null);
@@ -17,9 +18,11 @@ const Home = () => {
     productsRef,
     contactRef,
   };
+  const languageData = getLanguageData();
+
   return (
     <div className="home">
-      <NewNav scrollToRef={scrollToRef} />
+      <Navbar scrollToRef={scrollToRef} />
       <div className="homeContainer" ref={homeRef}>
         <video
           src="https://res.cloudinary.com/maxjhernandez/video/upload/v1704913058/front-video_f1qngl.mp4"
@@ -29,9 +32,9 @@ const Home = () => {
           controls={false}
         ></video>
         <div className="content">
-          <h1>MAXDEV</h1>
+          <h1>{languageData.homePage.title}</h1>
           <p>
-            <i>Your Vision, Our Code.</i>
+            <i>{languageData.homePage.subtitle}</i>
           </p>
         </div>
       </div>

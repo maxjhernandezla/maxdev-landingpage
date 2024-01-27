@@ -1,82 +1,32 @@
 import './Products.scss';
-
+import { getLanguageData } from '../../helpers/languageHelper';
 const Products = () => {
+  const data = getLanguageData();
   return (
     <div className="products">
       <div className="productsTitle">
         <h2>Products</h2>
       </div>
       <div className="productsContainer">
-        <div className="product">
-          <div className="imgContainer">
-            <img
-              src="https://res.cloudinary.com/maxjhernandez/image/upload/v1704993204/landingpage3_bx4yh7.jpg"
-              alt="landing-page"
-              className="productImg"
-            />
+        {data.products.map((item, idx) => (
+          <div className="product" key={idx}>
+            <div className="imgContainer">
+              <img
+                src={item.img.src}
+                alt={item.img.alt}
+                className="productImg"
+              />
+            </div>
+            <div className="description">
+              <h3>{item.title}</h3>
+              <ul>
+                {item.description.map((listItem, idx) => (
+                  <li key={idx}>{listItem}</li>
+                ))}
+              </ul>
+            </div>
           </div>
-          <div className="description">
-            <h3>Landing Page</h3>
-            <ul>
-              <li>Website created in HTML, CSS, and JS</li>
-              <li>Optimized for all types of devices</li>
-              <li>1 contact form</li>
-              <li>Links to social media</li>
-              <li>WhatsApp button</li>
-              <li>Hosting for 1 year</li>
-              <li>Domain .com.ar for 1 year</li>
-              <li>SSL certificate for 1 year</li>
-              <li>No web maintenance required</li>
-            </ul>
-          </div>
-        </div>
-        <div className="product">
-          <div className="imgContainer">
-            <img
-              src="https://res.cloudinary.com/maxjhernandez/image/upload/v1704993208/webcorporate2_ii8bp8.jpg"
-              alt="corporate-web"
-              className="productImg"
-            />
-          </div>
-          <div className="description">
-            <h3>Corporate Website</h3>
-            <ul>
-              <li>Website created in HTML, CSS, and JS</li>
-              <li>Optimized for all types of devices</li>
-              <li>1 contact form</li>
-              <li>Links to social media</li>
-              <li>WhatsApp button</li>
-              <li>Hosting for 1 year</li>
-              <li>Domain .com.ar for 1 year</li>
-              <li>SSL certificate for 1 year</li>
-              <li>No web maintenance required</li>
-            </ul>
-          </div>
-        </div>
-        <div className="product">
-          <div className="imgContainer">
-            <img
-              src="https://res.cloudinary.com/maxjhernandez/image/upload/v1704993203/ecommerce3_jlfyja.jpg"
-              alt="ecommerce"
-              className="productImg"
-            />
-          </div>
-
-          <div className="description">
-            <h3>E-commerce</h3>
-            <ul>
-              <li>Website created in HTML, CSS, and JS</li>
-              <li>Optimized for all types of devices</li>
-              <li>1 contact form</li>
-              <li>Links to social media</li>
-              <li>WhatsApp button</li>
-              <li>Hosting for 1 year</li>
-              <li>Domain .com.ar for 1 year</li>
-              <li>SSL certificate for 1 year</li>
-              <li>No web maintenance required</li>
-            </ul>
-          </div>
-        </div>
+        ))}
       </div>
     </div>
   );

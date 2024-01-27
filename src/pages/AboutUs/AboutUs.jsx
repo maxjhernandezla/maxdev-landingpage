@@ -1,12 +1,12 @@
 import React, { useRef } from 'react';
 import './AboutUs.scss';
 import { useInView } from 'react-intersection-observer';
-
+import { getLanguageData } from '../../helpers/languageHelper';
 const AboutUs = () => {
   const [ref, inView] = useInView({
     triggerOnce: true,
   });
-
+  const data = getLanguageData();
   return (
     <div className="aboutUs">
       <div className={`aboutUsContainer ${inView ? 'visible' : ''}`} ref={ref}>
@@ -18,18 +18,13 @@ const AboutUs = () => {
           />
         </div>
         <div className="right">
-          <p className="topTitle">Purpose and strategic objectives</p>
-          <h1>About us</h1>
+          <p className="topTitle">{data.aboutUs.topTitle}</p>
+          <h1>{data.aboutUs.title}</h1>
           <div className="pContainer">
             <p>
-              We specialize in empowering small and medium-sized businesses to
-              thrive in the online world. Our mission is to enhance your digital
-              presence and boost sales through innovative web development.{' '}
+              {data.aboutUs.text1}
               <br />
-              At MAXCODE, we understand the unique challenges faced by
-              businesses of all sizes. From startups to mid-sized enterprises,
-              we tailor our expertise to help you navigate the digital landscape
-              seamlessly.
+              {data.aboutUs.text2}
             </p>
           </div>
         </div>
