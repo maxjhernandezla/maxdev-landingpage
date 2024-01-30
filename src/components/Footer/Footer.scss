@@ -1,11 +1,13 @@
+@import '../../helpers/colors.scss';
+
 .footer {
   height: 150px;
-  background-color: #111111;
+  background-color: $footer-background;
   display: flex;
   justify-content: center;
   align-items: center;
   p {
-    color: white;
+    color: $footer-text;
     font-size: 18px;
     font-weight: 300;
   }

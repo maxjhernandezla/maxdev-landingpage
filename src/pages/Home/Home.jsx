@@ -6,6 +6,7 @@ import Footer from '../../components/Footer/Footer';
 import Navbar from '../../components/Navbar/Navbar';
 import { useRef } from 'react';
 import { getLanguageData } from '../../helpers/languageHelper';
+import Whatsapp from '../../components/Whatsapp/Whatsapp';
 
 const Home = () => {
   const homeRef = useRef(null);
@@ -23,6 +24,7 @@ const Home = () => {
   return (
     <div className="home">
       <Navbar scrollToRef={scrollToRef} />
+      <Whatsapp />
       <div className="homeContainer" ref={homeRef}>
         <video
           src="https://res.cloudinary.com/maxjhernandez/video/upload/v1704913058/front-video_f1qngl.mp4"
@@ -32,17 +34,20 @@ const Home = () => {
           controls={false}
         ></video>
         <div className="content">
-          <h1>{languageData.homePage.title}</h1>
+          <h1>
+            <div className="max">{languageData.homePage.max}</div>
+            <div className="dev">{languageData.homePage.dev}</div>
+          </h1>
           <p>
             <i>{languageData.homePage.subtitle}</i>
           </p>
         </div>
       </div>
-      <div className="aboutUsContainer" ref={aboutUsRef}>
-        <AboutUs />
-      </div>
       <div className="productsContainer" ref={productsRef}>
         <Products />
+      </div>
+      <div className="aboutUsContainer" ref={aboutUsRef}>
+        <AboutUs />
       </div>
       <div className="contactContainer" ref={contactRef}>
         <Contact />

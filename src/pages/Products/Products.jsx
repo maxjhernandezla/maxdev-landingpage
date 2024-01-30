@@ -5,10 +5,10 @@ const Products = () => {
   return (
     <div className="products">
       <div className="productsTitle">
-        <h2>Products</h2>
+        <h2>{data.products.title}</h2>
       </div>
       <div className="productsContainer">
-        {data.products.map((item, idx) => (
+        {data.products.products.map((item, idx) => (
           <div className="product" key={idx}>
             <div className="imgContainer">
               <img

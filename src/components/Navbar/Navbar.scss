@@ -1,7 +1,9 @@
+@import '../../helpers/colors.scss';
+
 .navbar {
   width: 100%;
   height: 100px;
-  background-color: #00000039;
+  background-color: $navbar-background;
   padding: 30px;
   display: flex;
   justify-content: space-between;
@@ -18,7 +20,7 @@
   &.expanded {
     position: fixed;
     top: 0;
-    background-color: #000000;
+    background-color: $navbar-background-expanded;
     width: 100%;
     display: flex;
     justify-content: space-between;
@@ -34,23 +36,20 @@
       top: 100px; /* Altura del navbar */
       left: 0;
       width: 100%;
-      background-color: #000000;
+      background-color: $navbar-background-expanded-menu;
       z-index: 998; /* Para que aparezca por debajo del navbar */
       align-items: center;
       padding: 25px;
-      height: fit-content;
+      height: 100vh;
       .link {
         padding: 30px;
         font-size: 22px;
-        color: #39cccc;
+        color: $navbar-expanded-link-text-color;
         font-weight: 600;
         margin: 0;
         width: 100%;
         display: flex;
         justify-content: center;
-        &:hover {
-          background-color: #232323cd;
-        }
       }
     }
   }
@@ -64,9 +63,9 @@
       border-radius: 50%;
       cursor: pointer;
       &:hover {
-        box-shadow: -6px 2px 79px 0px rgba(0, 209, 205, 0.69);
-        -webkit-box-shadow: -6px 2px 79px 0px rgba(0, 209, 205, 0.69);
-        -moz-box-shadow: -6px 2px 79px 0px rgba(0, 209, 205, 0.69);
+        box-shadow: -6px 2px 79px 0px $navbar-logo-hover;
+        -webkit-box-shadow: -6px 2px 79px 0px $navbar-logo-hover;
+        -moz-box-shadow: -6px 2px 79px 0px $navbar-logo-hover;
       }
     }
   }
@@ -74,17 +73,17 @@
     display: flex;
     gap: 30px;
     .link {
-      color: white;
+      color: $navbar--link-text-color;
       font-size: 16px;
       font-weight: normal;
       cursor: pointer;
       &:hover {
-        color: #39cccc;
+        color: $navbar-link-text-hover;
       }
     }
   }
   .toggle-icon {
-    color: #39cccc;
+    color: $navbar-toggle-icon;
     display: none;
   }
 }

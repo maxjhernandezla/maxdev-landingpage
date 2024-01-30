@@ -1,0 +1,18 @@
+.wppContainer {
+  .wppImg {
+    width: 150px;
+    height: 150px;
+    padding: 20px;
+    z-index: 999;
+    position: fixed;
+    bottom: 25px;
+    right: 40px;
+    border-radius: 50%;
+    cursor: pointer;
+    &:hover {
+      transform: translate(-1px, -3px);
+      -webkit-transform: translate(-1px, -3px);
+      -moz-transform: translate(-1px, -3px);
+    }
+  }
+}

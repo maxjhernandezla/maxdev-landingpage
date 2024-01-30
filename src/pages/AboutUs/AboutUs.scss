@@ -1,9 +1,11 @@
+@import '../../helpers/colors.scss';
+
 .aboutUs {
   height: 100vh;
   // background-image: url('https://res.cloudinary.com/maxjhernandez/image/upload/v1704913022/about-us_edpjmy.png');
   // background-size: cover; // Ajusta el tamaño para cubrir completamente el contenedor
   // background-position: center; // Centra la imagen
-  background-color: rgba(239, 239, 239, 0.646);
+  background-color: $about-us-background;
   margin: 0;
   display: flex;
   align-items: center;
@@ -32,13 +34,13 @@
       justify-content: space-evenly;
       h1 {
         font-size: 72px;
-        color: #0137cc;
+        color: $about-us-text;
         font-weight: 400;
         margin-bottom: 15px;
       }
       .topTitle {
         font-size: 14px;
-        color: #0137cc;
+        color: $about-us-text;
         font-weight: 300;
         margin-bottom: 25px;
       }
@@ -46,7 +48,7 @@
         width: 400px;
         p {
           font-size: 18px;
-          color: #0137cc;
+          color: $about-us-text;
           font-weight: 300;
           line-height: 1.3;
           margin-bottom: 15px;
