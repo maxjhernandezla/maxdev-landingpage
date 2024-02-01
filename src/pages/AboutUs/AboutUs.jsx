@@ -9,25 +9,24 @@ const AboutUs = () => {
   const data = getLanguageData();
   return (
     <div className="aboutUs">
-      <div className={`aboutUsContainer ${inView ? 'visible' : ''}`} ref={ref}>
+      <div className={`aboutUsContent ${inView ? 'visible' : ''}`} ref={ref}>
         <div className="left">
-          <img
-            src="https://res.cloudinary.com/maxjhernandez/image/upload/v1706216516/Disen%CC%83o_sin_ti%CC%81tulo_8_shpqdj.png"
-            alt="img"
-            className={`img ${inView ? 'show' : ''}`}
-          />
+          <h2>{data.aboutUs.title}</h2>
+          <p>{data.aboutUs.text}</p>
         </div>
         <div className="right">
-          <p className="topTitle">{data.aboutUs.topTitle}</p>
-          <h1>{data.aboutUs.title}</h1>
-          <div className="pContainer">
-            <p>
-              {data.aboutUs.text1}
-              <br />
-              {data.aboutUs.text2}
-            </p>
-          </div>
+          <img
+            src="https://res.cloudinary.com/maxjhernandez/image/upload/v1706808586/Disen%CC%83o_sin_ti%CC%81tulo_17_jnxnjs.png"
+            alt=""
+          />
         </div>
+      </div>
+      <div className="team">
+        {data.aboutUs.team.map((member, idx) => (
+          <div className="member" key={idx}>
+            <img src={member.src} alt={member.alt} />
+          </div>
+        ))}
       </div>
     </div>
   );

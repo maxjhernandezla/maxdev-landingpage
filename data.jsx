@@ -23,14 +23,20 @@ export const english = {
       {
         name: 'Maximo Hernandez',
         position: 'Fullstack Developer',
+        src: 'https://res.cloudinary.com/maxjhernandez/image/upload/v1706809455/Disen%CC%83o_sin_ti%CC%81tulo_18_bnz9yj.png',
+        alt: 'Maximo Hernandez',
       },
       {
         name: 'Pablo Cosentino',
         position: 'Web Designer',
+        src: 'https://res.cloudinary.com/maxjhernandez/image/upload/v1706809453/Disen%CC%83o_sin_ti%CC%81tulo_19_mxchhp.png',
+        alt: 'Pablo Cosentino',
       },
       {
         name: 'Fabian Partinelli',
         position: 'Fullstack Developer',
+        src: 'https://res.cloudinary.com/maxjhernandez/image/upload/v1706809413/Disen%CC%83o_sin_ti%CC%81tulo_20_hlcg66.png',
+        alt: 'Fabian Partinelli',
       },
     ],
   },
@@ -128,22 +134,25 @@ export const spanish = {
   aboutUs: {
     title: 'Nosotros',
     topTitle: 'Propósito y objetivos estratégicos',
-    text1:
-      'Nos especializamos en potenciar a pequeñas y medianas empresas para que prosperen en el mundo online. Nuestra misión es mejorar tu presencia digital y aumentar las ventas a través de un desarrollo web innovador.',
-    text2:
-      'En MAXCODE, entendemos los desafíos únicos que enfrentan las empresas de todos los tamaños. Desde startups hasta empresas medianas, adaptamos nuestra experiencia para ayudarte a navegar el panorama digital sin problemas.',
+    text: 'Bienvenido a MAXDEV, donde la experiencia y la innovación convergen para dar vida a tus ideas digitales. Con una sólida trayectoria, nuestro equipo colaborativo se dedica a fusionar la experiencia con la creatividad en cada proyecto de desarrollo web. Desde el diseño meticuloso hasta el desarrollo eficiente, en MAXDEV creamos soluciones a medida que reflejan la esencia de tu visión.',
     team: [
       {
         name: 'Maximo Hernandez',
         position: 'Fullstack Developer',
+        src: 'https://res.cloudinary.com/maxjhernandez/image/upload/v1706809455/Disen%CC%83o_sin_ti%CC%81tulo_18_bnz9yj.png',
+        alt: 'Maximo Hernandez',
       },
       {
         name: 'Pablo Cosentino',
         position: 'Web Designer',
+        src: 'https://res.cloudinary.com/maxjhernandez/image/upload/v1706809453/Disen%CC%83o_sin_ti%CC%81tulo_19_mxchhp.png',
+        alt: 'Pablo Cosentino',
       },
       {
         name: 'Fabian Partinelli',
         position: 'Fullstack Developer',
+        src: 'https://res.cloudinary.com/maxjhernandez/image/upload/v1706809413/Disen%CC%83o_sin_ti%CC%81tulo_20_hlcg66.png',
+        alt: 'Fabian Partinelli',
       },
     ],
   },
