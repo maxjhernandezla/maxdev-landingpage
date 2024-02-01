@@ -1,12 +1,11 @@
 .wppContainer {
   .wppImg {
-    width: 150px;
-    height: 150px;
-    padding: 20px;
+    width: 100px;
+    height: 100px;
     z-index: 999;
     position: fixed;
     bottom: 25px;
-    right: 40px;
+    right: 25px;
     border-radius: 50%;
     cursor: pointer;
     &:hover {

@@ -1,58 +1,17 @@
 import './Home.scss';
-import AboutUs from '../AboutUs/AboutUs';
-import Products from '../Products/Products';
-import Contact from '../Contact/Contact';
-import Footer from '../../components/Footer/Footer';
-import Navbar from '../../components/Navbar/Navbar';
-import { useRef } from 'react';
 import { getLanguageData } from '../../helpers/languageHelper';
-import Whatsapp from '../../components/Whatsapp/Whatsapp';
 
 const Home = () => {
-  const homeRef = useRef(null);
-  const aboutUsRef = useRef(null);
-  const productsRef = useRef(null);
-  const contactRef = useRef(null);
-  const scrollToRef = {
-    homeRef,
-    aboutUsRef,
-    productsRef,
-    contactRef,
-  };
-  const languageData = getLanguageData();
-
+  const data = getLanguageData();
   return (
     <div className="home">
-      <Navbar scrollToRef={scrollToRef} />
-      <Whatsapp />
-      <div className="homeContainer" ref={homeRef}>
-        <video
-          src="https://res.cloudinary.com/maxjhernandez/video/upload/v1704913058/front-video_f1qngl.mp4"
-          autoPlay
-          loop
-          muted
-          controls={false}
-        ></video>
-        <div className="content">
-          <h1>
-            <div className="max">{languageData.homePage.max}</div>
-            <div className="dev">{languageData.homePage.dev}</div>
-          </h1>
-          <p>
-            <i>{languageData.homePage.subtitle}</i>
-          </p>
+      <div className="container">
+        <div className="homeContent">
+          <h1 className="title">{data.homePage.title}</h1>
+          <p className="subtitle">{data.homePage.subtitle}</p>
+          <button className="button">{data.homePage.button}</button>
         </div>
       </div>
-      <div className="productsContainer" ref={productsRef}>
-        <Products />
-      </div>
-      <div className="aboutUsContainer" ref={aboutUsRef}>
-        <AboutUs />
-      </div>
-      <div className="contactContainer" ref={contactRef}>
-        <Contact />
-      </div>
-      <Footer />
     </div>
   );
 };

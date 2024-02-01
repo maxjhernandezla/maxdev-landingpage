@@ -7,9 +7,10 @@ export const english = {
     item4: 'Contact',
   },
   homePage: {
-    max: 'MAX',
-    dev: 'DEV',
-    subtitle: 'Web development to boost your business.',
+    title: 'Designing Experiences, Creating Connections.',
+    subtitle:
+      'With a solid track record, we provide reliable solutions. Our expertise is the guarantee of a web development that exceeds your expectations.',
+    button: 'Contact us!',
   },
   aboutUs: {
     title: 'About us',
@@ -24,7 +25,7 @@ export const english = {
         position: 'Fullstack Developer',
       },
       {
-        name: 'Pablo Rodriguez',
+        name: 'Pablo Cosentino',
         position: 'Web Designer',
       },
       {
@@ -33,65 +34,70 @@ export const english = {
       },
     ],
   },
-  products: {
-    title: 'Services',
-    products: [
+  services: {
+    title: 'Our Services',
+    servicesLeft: [
       {
         img: {
-          src: 'https://res.cloudinary.com/maxjhernandez/image/upload/v1704993204/landingpage3_bx4yh7.jpg',
-          alt: 'landing-page',
+          src: 'https://res.cloudinary.com/maxjhernandez/image/upload/v1706804231/Disen%CC%83o_sin_ti%CC%81tulo_13_csilaf.png',
+          alt: 'Web and Mobile Development',
         },
-        title: 'Landing Page',
-        description: [
-          'Website created in HTML, CSS, and JS',
-          'Optimized for all types of devices',
-          '1 contact form',
-          'Links to social media',
-          'WhatsApp button',
-          'Hosting for 1 year',
-          'Domain .com.ar for 1 year',
-          'SSL certificate for 1 year',
-          'No web maintenance required',
-        ],
+        title: 'Web and Mobile Development',
       },
       {
         img: {
-          src: 'https://res.cloudinary.com/maxjhernandez/image/upload/v1704993208/webcorporate2_ii8bp8.jpg',
-          alt: 'corporate-web',
+          src: 'https://res.cloudinary.com/maxjhernandez/image/upload/v1706804231/Disen%CC%83o_sin_ti%CC%81tulo_14_kjldzq.png',
+          alt: 'Custom Solutions',
         },
-        title: 'Corporate Website',
-        description: [
-          'Website created in HTML, CSS, and JS',
-          'Optimized for all types of devices',
-          '1 contact form',
-          'Links to social media',
-          'WhatsApp button',
-          'Hosting for 1 year',
-          'Domain .com.ar for 1 year',
-          'SSL certificate for 1 year',
-          'No web maintenance required',
-        ],
+        title: 'Custom Solutions',
       },
       {
         img: {
-          src: 'https://res.cloudinary.com/maxjhernandez/image/upload/v1704993203/ecommerce3_jlfyja.jpg',
-          alt: 'ecommerce',
+          src: 'https://res.cloudinary.com/maxjhernandez/image/upload/v1706804233/Disen%CC%83o_sin_ti%CC%81tulo_11_x30k6h.png',
+          alt: 'Digitize your Business',
         },
-        title: 'E-commerce',
-        description: [
-          'Website created in HTML, CSS, and JS',
-          'Optimized for all types of devices',
-          '1 contact form',
-          'Links to social media',
-          'WhatsApp button',
-          'Hosting for 1 year',
-          'Domain .com.ar for 1 year',
-          'SSL certificate for 1 year',
-          'No web maintenance required',
-        ],
+        title: 'Digitize your Business',
+      },
+      {
+        img: {
+          src: 'https://res.cloudinary.com/maxjhernandez/image/upload/v1706804234/Disen%CC%83o_sin_ti%CC%81tulo_10_jb0apw.png',
+          alt: 'Ecommerce',
+        },
+        title: 'Ecommerce',
+      },
+    ],
+    servicesRight: [
+      {
+        img: {
+          src: 'https://res.cloudinary.com/maxjhernandez/image/upload/v1706804231/Disen%CC%83o_sin_ti%CC%81tulo_16_gvcdmd.png',
+          alt: 'Custom Designs',
+        },
+        title: 'Custom Designs',
+      },
+      {
+        img: {
+          src: 'https://res.cloudinary.com/maxjhernandez/image/upload/v1706804232/Disen%CC%83o_sin_ti%CC%81tulo_12_wwvp57.png',
+          alt: 'Sales Statistics',
+        },
+        title: 'Sales Statistics',
+      },
+      {
+        img: {
+          src: 'https://res.cloudinary.com/maxjhernandez/image/upload/v1706804234/Disen%CC%83o_sin_ti%CC%81tulo_9_myfwnk.png',
+          alt: 'Payment Gateways',
+        },
+        title: 'Payment Gateways',
+      },
+      {
+        img: {
+          src: 'https://res.cloudinary.com/maxjhernandez/image/upload/v1706804231/Disen%CC%83o_sin_ti%CC%81tulo_15_mmqkgg.png',
+          alt: 'Technical Support',
+        },
+        title: 'Technical Support',
       },
     ],
   },
+
   contact: {
     title: 'Contact us',
     text: "Got a project? We've got personalized solutions! Let's chat and dive into the details of your case...",
@@ -114,9 +120,10 @@ export const spanish = {
     item4: 'Contacto',
   },
   homePage: {
-    max: 'MAX',
-    dev: 'DEV',
-    subtitle: 'Desarrollo web que potencia tu negocio.',
+    title: 'Diseñamos experiencias, creamos conexiones.',
+    subtitle:
+      'Con una trayectoria sólida, brindamos soluciones confiables. Nuestra experiencia es la garantía de un desarrollo web que supere tus expectativas.',
+    button: '¡Contáctanos!',
   },
   aboutUs: {
     title: 'Nosotros',
@@ -131,7 +138,7 @@ export const spanish = {
         position: 'Fullstack Developer',
       },
       {
-        name: 'Pablo Rodriguez',
+        name: 'Pablo Cosentino',
         position: 'Web Designer',
       },
       {
@@ -140,62 +147,66 @@ export const spanish = {
       },
     ],
   },
-  products: {
-    title: 'Servicios',
-    products: [
+  services: {
+    title: 'Nuestros Servicios',
+    servicesLeft: [
       {
         img: {
-          src: 'https://res.cloudinary.com/maxjhernandez/image/upload/v1704993204/landingpage3_bx4yh7.jpg',
-          alt: 'landing-page',
+          src: 'https://res.cloudinary.com/maxjhernandez/image/upload/v1706804231/Disen%CC%83o_sin_ti%CC%81tulo_13_csilaf.png',
+          alt: 'Desarrollo web y mobile',
         },
-        title: 'Landingpage',
-        description: [
-          'Sitio web creado en HTML, CSS y JS',
-          'Optimizado para todo tipo de dispositivos',
-          '1 formulario de contacto',
-          'Enlaces a redes sociales',
-          'Botón de WhatsApp',
-          'Hosting por 1 año',
-          'Dominio .com.ar por 1 año',
-          'Certificado SSL por 1 año',
-          'No se requiere mantenimiento web',
-        ],
+        title: 'Desarrollo web y mobile',
       },
       {
         img: {
-          src: 'https://res.cloudinary.com/maxjhernandez/image/upload/v1704993208/webcorporate2_ii8bp8.jpg',
-          alt: 'corporate-web',
+          src: 'https://res.cloudinary.com/maxjhernandez/image/upload/v1706804231/Disen%CC%83o_sin_ti%CC%81tulo_14_kjldzq.png',
+          alt: 'Soluciones a medida',
         },
-        title: 'Sitio Web Corporativo',
-        description: [
-          'Sitio web creado en HTML, CSS y JS',
-          'Optimizado para todo tipo de dispositivos',
-          '1 formulario de contacto',
-          'Enlaces a redes sociales',
-          'Botón de WhatsApp',
-          'Hosting por 1 año',
-          'Dominio .com.ar por 1 año',
-          'Certificado SSL por 1 año',
-          'No se requiere mantenimiento web',
-        ],
+        title: 'Soluciones a medida',
       },
       {
         img: {
-          src: 'https://res.cloudinary.com/maxjhernandez/image/upload/v1704993203/ecommerce3_jlfyja.jpg',
-          alt: 'ecommerce',
+          src: 'https://res.cloudinary.com/maxjhernandez/image/upload/v1706804233/Disen%CC%83o_sin_ti%CC%81tulo_11_x30k6h.png',
+          alt: 'Digializa tu negocio',
         },
-        title: 'Comercio Electrónico',
-        description: [
-          'Sitio web creado en HTML, CSS y JS',
-          'Optimizado para todo tipo de dispositivos',
-          '1 formulario de contacto',
-          'Enlaces a redes sociales',
-          'Botón de WhatsApp',
-          'Hosting por 1 año',
-          'Dominio .com.ar por 1 año',
-          'Certificado SSL por 1 año',
-          'No se requiere mantenimiento web',
-        ],
+        title: 'Digitaliza tu negocio',
+      },
+      {
+        img: {
+          src: 'https://res.cloudinary.com/maxjhernandez/image/upload/v1706804234/Disen%CC%83o_sin_ti%CC%81tulo_10_jb0apw.png',
+          alt: 'Ecommerce',
+        },
+        title: 'Ecommerce',
+      },
+    ],
+    servicesRight: [
+      {
+        img: {
+          src: 'https://res.cloudinary.com/maxjhernandez/image/upload/v1706804231/Disen%CC%83o_sin_ti%CC%81tulo_16_gvcdmd.png',
+          alt: 'Diseños personalizados',
+        },
+        title: 'Diseños personalizados',
+      },
+      {
+        img: {
+          src: 'https://res.cloudinary.com/maxjhernandez/image/upload/v1706804232/Disen%CC%83o_sin_ti%CC%81tulo_12_wwvp57.png',
+          alt: 'Estadisticas de tus ventas',
+        },
+        title: 'Estadisticas de tus ventas',
+      },
+      {
+        img: {
+          src: 'https://res.cloudinary.com/maxjhernandez/image/upload/v1706804234/Disen%CC%83o_sin_ti%CC%81tulo_9_myfwnk.png',
+          alt: 'Pasarelas de pago',
+        },
+        title: 'Pasarelas de pago',
+      },
+      {
+        img: {
+          src: 'https://res.cloudinary.com/maxjhernandez/image/upload/v1706804231/Disen%CC%83o_sin_ti%CC%81tulo_15_mmqkgg.png',
+          alt: 'Soporte técnico',
+        },
+        title: 'Soporte técnico',
       },
     ],
   },

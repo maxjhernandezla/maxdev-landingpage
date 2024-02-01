@@ -55,7 +55,7 @@ const NewNav = ({ ...scrollToRef }) => {
         </a>
         <a
           className="link"
-          onClick={() => scrollIntoView(scrollToRef.scrollToRef.productsRef)}
+          onClick={() => scrollIntoView(scrollToRef.scrollToRef.servicesRef)}
         >
           {languageData.navbar.item3}
         </a>
