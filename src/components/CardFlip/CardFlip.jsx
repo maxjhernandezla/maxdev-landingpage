@@ -1,13 +1,9 @@
 import React, { useState } from 'react';
 import ReactCardFlip from 'react-card-flip';
-import { getLanguageData } from '../../helpers/languageHelper';
 import './CardFlip.scss';
 
-const CardFlip = () => {
-  const data = getLanguageData();
-  const [isFlipped, setIsFlipped] = useState(
-    Array(data.aboutUs.team.length).fill(false)
-  );
+const CardFlip = ({ team }) => {
+  const [isFlipped, setIsFlipped] = useState(Array(team.length).fill(false));
 
   const handleFlip = (idx) => {
     const newIsFlipped = [...isFlipped];
@@ -17,7 +13,7 @@ const CardFlip = () => {
 
   return (
     <div className="flipCard">
-      {data.aboutUs.team.map((member, idx) => (
+      {team.map((member, idx) => (
         <ReactCardFlip
           key={idx}
           isFlipped={isFlipped[idx]}

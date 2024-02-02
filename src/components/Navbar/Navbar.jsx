@@ -3,12 +3,12 @@ import './Navbar.scss';
 import { FaBars, FaTimes } from 'react-icons/fa';
 import Language from '../Language/Language';
 import { getLanguageData } from '../../helpers/languageHelper';
-import { useLanguage } from '../../context/LanguageContext';
-const NewNav = ({ ...scrollToRef }) => {
+
+const Navbar = ({ ...scrollToRef }) => {
   const [toggle, setToggle] = useState(false);
   const [navbar, setNavbar] = useState(false);
 
-  const languageData = getLanguageData();
+  const data = getLanguageData();
 
   const handleToggle = () => {
     setToggle(!toggle);
@@ -40,8 +40,8 @@ const NewNav = ({ ...scrollToRef }) => {
     >
       <div className="left">
         <img
-          src="https://res.cloudinary.com/maxjhernandez/image/upload/v1704913023/logo_c9gzri.png"
-          alt="logo"
+          src={data.logo.src}
+          alt={data.logo.data}
           className="logo"
           onClick={() => scrollIntoView(scrollToRef.scrollToRef.homeRef)}
         />
@@ -51,25 +51,25 @@ const NewNav = ({ ...scrollToRef }) => {
           className="link"
           onClick={() => scrollIntoView(scrollToRef.scrollToRef.homeRef)}
         >
-          {languageData.navbar.item1}
+          {data.navbar.item1}
         </a>
         <a
           className="link"
           onClick={() => scrollIntoView(scrollToRef.scrollToRef.servicesRef)}
         >
-          {languageData.navbar.item3}
+          {data.navbar.item3}
         </a>
         <a
           className="link"
           onClick={() => scrollIntoView(scrollToRef.scrollToRef.aboutUsRef)}
         >
-          {languageData.navbar.item2}
+          {data.navbar.item2}
         </a>
         <a
           className="link"
           onClick={() => scrollIntoView(scrollToRef.scrollToRef.contactRef)}
         >
-          {languageData.navbar.item4}
+          {data.navbar.item4}
         </a>
         <div className="language">
           <Language />
@@ -82,4 +82,4 @@ const NewNav = ({ ...scrollToRef }) => {
   );
 };
 
-export default NewNav;
+export default Navbar;

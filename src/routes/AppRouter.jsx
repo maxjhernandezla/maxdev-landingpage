@@ -35,9 +35,9 @@ const AppRouter = () => {
         <div className="aboutUsContainer" ref={aboutUsRef}>
           <AboutUs />
         </div>
-        {/* <div className="contactContainer" ref={contactRef}>
+        <div className="contactContainer" ref={contactRef}>
           <Contact />
-        </div> */}
+        </div>
         <Footer />
       </div>
     </div>

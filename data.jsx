@@ -1,5 +1,9 @@
 export const english = {
   language: 'english',
+  logo: {
+    src: 'https://res.cloudinary.com/maxjhernandez/image/upload/v1706896374/Disen%CC%83o_sin_ti%CC%81tulo_24_pqcm1d.png',
+    alt: 'logo',
+  },
   navbar: {
     item1: 'Home',
     item2: 'About us',
@@ -14,11 +18,8 @@ export const english = {
   },
   aboutUs: {
     title: 'About us',
-    teamTitle: 'The Team',
-    text1:
-      'We specialize in empowering small and medium-sized businesses to thrive in the online world. Our mission is to enhance your digital presence and boost sales through innovative web development.',
-    text2:
-      'At MAXCODE, we understand the unique challenges faced by businesses of all sizes. From startups to mid-sized enterprises, we tailor our expertise to help you navigate the digital landscape seamlessly.',
+    topTitle: 'Purpose and strategic objectives',
+    text: 'Welcome to MAXDEV, where experience and innovation converge to bring your digital ideas to life. With a strong track record, our collaborative team is dedicated to merging expertise with creativity in every web development project. From meticulous design to efficient development, at MAXDEV, we craft bespoke solutions that mirror the essence of your vision.',
     team: [
       {
         name: 'Maximo Hernandez',
@@ -36,7 +37,6 @@ export const english = {
         name: 'Fabian Partinelli',
         position: 'Fullstack Developer',
         src: 'https://res.cloudinary.com/maxjhernandez/image/upload/v1706809413/Disen%CC%83o_sin_ti%CC%81tulo_20_hlcg66.png',
-        alt: 'Fabian Partinelli',
       },
     ],
   },
@@ -119,6 +119,10 @@ export const english = {
 
 export const spanish = {
   language: 'español',
+  logo: {
+    src: 'https://res.cloudinary.com/maxjhernandez/image/upload/v1706896374/Disen%CC%83o_sin_ti%CC%81tulo_24_pqcm1d.png',
+    alt: 'logo',
+  },
   navbar: {
     item1: 'Inicio',
     item2: 'Nosotros',
@@ -133,7 +137,7 @@ export const spanish = {
   },
   aboutUs: {
     title: 'Nosotros',
-    teamTitle: 'El equipo',
+    topTitle: 'Propósito y objetivos estratégicos',
     text: 'Bienvenido a MAXDEV, donde la experiencia y la innovación convergen para dar vida a tus ideas digitales. Con una sólida trayectoria, nuestro equipo colaborativo se dedica a fusionar la experiencia con la creatividad en cada proyecto de desarrollo web. Desde el diseño meticuloso hasta el desarrollo eficiente, en MAXDEV creamos soluciones a medida que reflejan la esencia de tu visión.',
     team: [
       {
@@ -152,7 +156,6 @@ export const spanish = {
         name: 'Fabian Partinelli',
         position: 'Fullstack Developer',
         src: 'https://res.cloudinary.com/maxjhernandez/image/upload/v1706809413/Disen%CC%83o_sin_ti%CC%81tulo_20_hlcg66.png',
-        alt: 'Fabian Partinelli',
       },
     ],
   },
