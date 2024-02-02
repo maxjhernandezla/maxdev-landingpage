@@ -1,12 +1,21 @@
-import React, { useRef } from 'react';
+import React, { useState } from 'react';
 import './AboutUs.scss';
 import { useInView } from 'react-intersection-observer';
 import { getLanguageData } from '../../helpers/languageHelper';
+import CardFlip from '../../components/CardFlip/CardFlip';
+
 const AboutUs = () => {
+  const data = getLanguageData();
+  const [isFlipped, setIsFlipped] = useState(false);
+
+  const handleFlip = (idx) => {
+    setIsFlipped(!isFlipped);
+  };
+
   const [ref, inView] = useInView({
     triggerOnce: true,
   });
-  const data = getLanguageData();
+  console.log(isFlipped);
   return (
     <div className="aboutUs">
       <div className={`aboutUsContent ${inView ? 'visible' : ''}`} ref={ref}>
@@ -22,11 +31,7 @@ const AboutUs = () => {
         </div>
       </div>
       <div className="team">
-        {data.aboutUs.team.map((member, idx) => (
-          <div className="member" key={idx}>
-            <img src={member.src} alt={member.alt} />
-          </div>
-        ))}
+        <CardFlip />
       </div>
     </div>
   );

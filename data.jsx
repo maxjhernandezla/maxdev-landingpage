@@ -14,7 +14,7 @@ export const english = {
   },
   aboutUs: {
     title: 'About us',
-    topTitle: 'Purpose and strategic objectives',
+    teamTitle: 'The Team',
     text1:
       'We specialize in empowering small and medium-sized businesses to thrive in the online world. Our mission is to enhance your digital presence and boost sales through innovative web development.',
     text2:
@@ -133,7 +133,7 @@ export const spanish = {
   },
   aboutUs: {
     title: 'Nosotros',
-    topTitle: 'Propósito y objetivos estratégicos',
+    teamTitle: 'El equipo',
     text: 'Bienvenido a MAXDEV, donde la experiencia y la innovación convergen para dar vida a tus ideas digitales. Con una sólida trayectoria, nuestro equipo colaborativo se dedica a fusionar la experiencia con la creatividad en cada proyecto de desarrollo web. Desde el diseño meticuloso hasta el desarrollo eficiente, en MAXDEV creamos soluciones a medida que reflejan la esencia de tu visión.',
     team: [
       {

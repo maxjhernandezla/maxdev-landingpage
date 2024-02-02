@@ -1,0 +1,48 @@
+@import '../../helpers/colors.scss';
+
+.flipCard {
+  display: flex;
+  flex-direction: row;
+  height: 100%;
+  align-items: center;
+  width: 100%;
+  justify-content: space-around;
+  cursor: pointer;
+
+  .front {
+    img {
+      height: 300px;
+    }
+  }
+  .back {
+    height: 300px;
+    width: 300px;
+    border-radius: 50%;
+    background-color: $a-light-blue;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .backContainer {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 300px;
+      width: 300px;
+      border-radius: 50%;
+      background-color: $navbar-background-light;
+      gap: 10px;
+      h4 {
+        font-size: 18px;
+        font-weight: 400;
+        width: 90%;
+        text-align: center;
+        padding: 10px;
+      }
+      p {
+        font-size: 14px;
+        font-weight: 300px;
+      }
+    }
+  }
+}
