@@ -1,8 +1,9 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import './Navbar.scss';
 import { FaBars, FaTimes } from 'react-icons/fa';
 import Language from '../Language/Language';
 import { getLanguageData } from '../../helpers/languageHelper';
+import { scrollToSection } from '../../helpers/scrollHelper';
 
 const Navbar = ({ ...scrollToRef }) => {
   const [toggle, setToggle] = useState(false);
@@ -15,10 +16,7 @@ const Navbar = ({ ...scrollToRef }) => {
   };
 
   const scrollIntoView = (sectionRef) => {
-    window.scrollTo({
-      top: sectionRef.current.offsetTop,
-      behavior: 'smooth',
-    });
+    scrollToSection(sectionRef);
     setToggle(false);
   };
 
@@ -30,7 +28,13 @@ const Navbar = ({ ...scrollToRef }) => {
     }
   };
 
-  window.addEventListener('scroll', handleNavbar);
+  useEffect(() => {
+    window.addEventListener('scroll', handleNavbar);
+
+    return () => {
+      window.removeEventListener('scroll', handleNavbar);
+    };
+  }, []);
 
   return (
     <nav

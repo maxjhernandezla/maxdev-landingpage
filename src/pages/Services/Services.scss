@@ -5,6 +5,7 @@
   flex-direction: column;
   align-items: center;
   height: 70vh;
+  min-height: max-content;
   .servicesTitle {
     text-align: center;
     margin-top: 120px;
@@ -43,7 +44,6 @@
       .service {
         display: flex;
         flex-direction: row-reverse;
-
         align-items: center;
         padding: 10px;
         border-radius: 10px;
@@ -57,6 +57,31 @@
           background-color: $a-dark-grey;
         }
       }
+    }
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .services {
+    height: 60vh;
+    min-height: fit-content;
+  }
+  .services .servicesContent {
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 0;
+    align-items: center;
+  }
+  .services .servicesContent .right {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .services .servicesContent .right .service {
+    flex-direction: row;
+    .imgContainer {
+      margin-right: 15px;
+      margin-left: 0;
     }
   }
 }

@@ -19,7 +19,6 @@ const AppRouter = () => {
     servicesRef,
     contactRef,
   };
-  const languageData = getLanguageData();
 
   return (
     <div className="appRouter">
@@ -27,7 +26,7 @@ const AppRouter = () => {
         <Navbar scrollToRef={scrollToRef} />
         <Whatsapp />
         <div className="homeContainer" ref={homeRef}>
-          <Home />
+          <Home scrollToRef={scrollToRef} />
         </div>
         <div className="servicesContainer" ref={servicesRef}>
           <Services />
@@ -35,9 +34,9 @@ const AppRouter = () => {
         <div className="aboutUsContainer" ref={aboutUsRef}>
           <AboutUs />
         </div>
-        <div className="contactContainer" ref={contactRef}>
+        {/* <div className="contactContainer" ref={contactRef}>
           <Contact />
-        </div>
+        </div> */}
         <Footer />
       </div>
     </div>

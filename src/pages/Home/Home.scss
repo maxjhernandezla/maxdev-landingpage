@@ -23,6 +23,7 @@
         color: $a-white;
         font-size: 40px;
         font-weight: 400;
+        text-align: center;
       }
       .subtitle {
         color: $a-white;
@@ -49,21 +50,22 @@
   }
 }
 
-// @media screen and (max-width: 650px) {
-//   .home .homeContainer .content {
-//     height: 100%;
-//     top: -265px;
-//     align-items: center;
-//     left: 0;
-//     width: 100%;
-//   }
-//   .home .homeContainer .content h1 {
-//     margin-top: 110px;
-//   }
-// }
+@media screen and (max-width: 900px) {
+  .home .container .homeContent .title {
+    font-size: 32px;
+    width: 90%;
+  }
+  .home .container .homeContent .subtitle {
+    width: 90%;
+  }
+}
 
-// @media screen and (max-width: 450px) {
-//   .home .homeContainer .content p {
-//     display: none;
-//   }
-// }
+@media screen and (max-width: 400px) {
+  .home .container .homeContent .title {
+    font-size: 32px;
+    width: 90%;
+  }
+  .home .container .homeContent .button {
+    width: 60%;
+  }
+}

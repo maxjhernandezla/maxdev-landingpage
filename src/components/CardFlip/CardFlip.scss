@@ -46,3 +46,27 @@
     }
   }
 }
+
+@media screen and (max-width: 1000px) {
+  .flipCard {
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  .flipCard {
+    .front {
+      img {
+        height: 250px;
+      }
+    }
+    .back {
+      height: 250px;
+      width: 250px;
+      .backContainer {
+        height: 250px;
+        width: 250px;
+      }
+    }
+  }
+}
