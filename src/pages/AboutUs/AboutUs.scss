@@ -14,7 +14,6 @@
     .left {
       width: 50vw;
       padding-left: 100px;
-      padding-top: 50px;
       display: flex;
       flex-direction: column;
       h2 {
@@ -33,9 +32,9 @@
       width: 50vw;
       display: flex;
       justify-content: center;
+      height: max-content;
       img {
         padding: 20px;
-
         height: 460px;
       }
     }
@@ -76,7 +75,7 @@
 //   }
 // }
 
-@media screen and (max-width: 950px) {
+@media screen and (max-width: 1050px) {
   .aboutUs {
     .aboutUsContent {
       flex-direction: column;
@@ -91,12 +90,16 @@
         width: 90%;
       }
     }
+    .team {
+      display: none;
+    }
   }
 }
 
 @media screen and (max-width: 600px) {
   .aboutUs {
     .aboutUsContent {
+      min-height: 100vh;
       .right {
         img {
           height: 400px;
@@ -121,7 +124,7 @@
     .aboutUsContent {
       .right {
         img {
-          height: 350px;
+          height: 300px;
         }
       }
     }
