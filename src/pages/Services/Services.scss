@@ -9,6 +9,7 @@
   .servicesTitle {
     text-align: center;
     margin-top: 120px;
+    margin-bottom: 25px;
     h2 {
       font-size: 40px;
       font-weight: 400;
@@ -78,6 +79,9 @@
   }
   .services .servicesContent .right .service {
     flex-direction: row;
+    &:hover {
+      background-color: $a-grey;
+    }
     .imgContainer {
       margin-right: 15px;
       margin-left: 0;
