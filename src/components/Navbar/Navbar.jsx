@@ -76,7 +76,7 @@ const Navbar = ({ ...scrollToRef }) => {
           {data.navbar.item4}
         </a>
         <div className="language">
-          <Language />
+          <Language setToggle={setToggle} />
         </div>
       </div>
       <div className="toggle-icon" onClick={handleToggle}>

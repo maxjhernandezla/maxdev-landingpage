@@ -6,7 +6,6 @@
   align-items: center;
   height: 70vh;
   min-height: max-content;
-
   .servicesTitle {
     text-align: center;
     margin-top: 120px;
@@ -33,7 +32,7 @@
         align-items: center;
         padding: 10px;
         border-radius: 10px;
-
+        width: 300px;
         .imgContainer {
           margin-right: 15px;
 
@@ -59,7 +58,7 @@
         align-items: center;
         padding: 10px;
         border-radius: 10px;
-
+        width: 300px;
         .imgContainer {
           margin-left: 15px;
 
@@ -78,23 +77,49 @@
       }
     }
   }
-
-  @media screen and (max-width: 700px) {
-    height: 100vh;
-    min-height: fit-content;
+}
+@media screen and (max-width: 700px) {
+  .services {
+    height: 100%;
+    min-height: max-content;
 
     .servicesContent {
       flex-direction: column;
       justify-content: center;
       align-items: center;
       height: 100%;
-
+      width: 100%;
+      .left {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+      }
       .right {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        width: 100%;
         .service {
           flex-direction: row; /* Aplique flex-direction aquí */
           .imgContainer {
             margin-right: 15px;
+            margin-left: 0;
           }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 350px) {
+  .services {
+    .servicesContent {
+      .left,
+      .right {
+        .service {
+          width: 200px;
         }
       }
     }
