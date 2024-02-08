@@ -62,9 +62,15 @@
 }
 
 @media screen and (max-width: 400px) {
-  .home .container .homeContent .title {
-    font-size: 32px;
-    width: 90%;
+  .home {
+    .container {
+      min-height: 100%;
+
+      .homeContent .title {
+        font-size: 32px;
+        width: 90%;
+      }
+    }
   }
   .home .container .homeContent .button {
     width: 60%;
