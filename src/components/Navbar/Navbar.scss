@@ -40,8 +40,9 @@
       align-items: center;
       padding: 25px;
       height: 100vh;
+      min-height: 100%;
+      justify-content: flex-start;
       .link {
-        padding: 30px;
         font-size: 22px;
         color: $navbar-expanded-link-text-color;
         font-weight: 600;
