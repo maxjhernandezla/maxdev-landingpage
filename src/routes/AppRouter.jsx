@@ -5,7 +5,6 @@ import Footer from '../components/Footer/Footer';
 import Navbar from '../components/Navbar/Navbar';
 import Home from '../pages/Home/Home';
 import { useRef } from 'react';
-import { getLanguageData } from '../helpers/languageHelper';
 import Whatsapp from '../components/Whatsapp/Whatsapp';
 
 const AppRouter = () => {

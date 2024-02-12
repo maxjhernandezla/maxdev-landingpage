@@ -19,32 +19,37 @@
       flex-direction: column;
       width: 900px;
       align-items: center;
-      gap: 25px;
-      .title {
-        color: $a-white;
-        font-size: 40px;
-        font-weight: 400;
-        text-align: center;
-      }
-      .subtitle {
-        color: $a-white;
-        font-size: 22px;
-        font-weight: 200;
-        text-align: center;
-      }
-      .button {
-        padding: 10px;
-        background-color: $a-light-blue;
-        border: none;
-        border-radius: 10px;
-        width: 250px;
-        color: $a-white;
-        font-size: 18px;
-        font-weight: 500;
-        cursor: pointer;
-        &:hover {
-          background-color: $a-white;
-          color: $a-light-blue;
+      .item {
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        gap: 25px;
+        .title {
+          color: $a-white;
+          font-size: 40px;
+          font-weight: 400;
+          text-align: center;
+        }
+        .subtitle {
+          color: $a-white;
+          font-size: 22px;
+          font-weight: 200;
+          text-align: center;
+        }
+        .button {
+          padding: 10px;
+          background-color: $a-light-blue;
+          border: none;
+          border-radius: 10px;
+          width: 250px;
+          color: $a-white;
+          font-size: 18px;
+          font-weight: 500;
+          cursor: pointer;
+          &:hover {
+            background-color: $a-white;
+            color: $a-light-blue;
+          }
         }
       }
     }
@@ -52,11 +57,16 @@
 }
 
 @media screen and (max-width: 900px) {
-  .home .container .homeContent .title {
+  .home .container .homeContent .item .title {
     font-size: 32px;
     width: 90%;
   }
-  .home .container .homeContent .subtitle {
+
+  .homeContent .item .subtitle {
+    font-size: 20px;
+    width: 90%;
+  }
+  .home .container .homeContent .item .subtitle {
     width: 90%;
   }
 }
@@ -66,13 +76,17 @@
     .container {
       min-height: 100%;
 
-      .homeContent .title {
-        font-size: 32px;
+      .homeContent .item .title {
+        font-size: 28px;
+        width: 90%;
+      }
+      .homeContent .item .subtitle {
+        font-size: 16px;
         width: 90%;
       }
     }
   }
-  .home .container .homeContent .button {
+  .home .container .homeContent .item .button {
     width: 60%;
   }
 }

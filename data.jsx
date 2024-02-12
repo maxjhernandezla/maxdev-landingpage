@@ -11,10 +11,20 @@ export const english = {
     item4: 'Contact',
   },
   homePage: {
-    title: 'Designing Experiences, Creating Connections.',
-    subtitle:
-      'With a solid track record, we provide reliable solutions. Our expertise is the guarantee of a web development that exceeds your expectations.',
-    button: 'Contact us!',
+    carousel: [
+      {
+        title: 'Designing Experiences, Creating Connections.',
+        subtitle:
+          'With a solid track record, we provide reliable solutions. Our expertise is the guarantee of a web development that exceeds your expectations.',
+        button: 'Contact us!',
+      },
+      // {
+      //   title: 'Designing Experiences, Creating Connections.',
+      //   subtitle:
+      //     'With a solid track record, we provide reliable solutions. Our expertise is the guarantee of a web development that exceeds your expectations.',
+      //   button: 'Contact us!',
+      // },
+    ],
   },
   aboutUs: {
     title: 'About us',
@@ -130,10 +140,20 @@ export const spanish = {
     item4: 'Contacto',
   },
   homePage: {
-    title: 'Diseñamos experiencias, creamos conexiones.',
-    subtitle:
-      'Con una trayectoria sólida, brindamos soluciones confiables. Nuestra experiencia es la garantía de un desarrollo web que supere tus expectativas.',
-    button: '¡Contáctanos!',
+    carousel: [
+      {
+        title: 'Diseñamos experiencias, creamos conexiones.',
+        subtitle:
+          'Con una trayectoria sólida, brindamos soluciones confiables. Nuestra experiencia es la garantía de un desarrollo web que supere tus expectativas.',
+        button: '¡Contáctanos!',
+      },
+      // {
+      //   title: 'Diseñamos experiencias, creamos conexiones.',
+      //   subtitle:
+      //     'Con una trayectoria sólida, brindamos soluciones confiables. Nuestra experiencia es la garantía de un desarrollo web que supere tus expectativas.',
+      //   button: '¡Contáctanos!',
+      // },
+    ],
   },
   aboutUs: {
     title: 'Nosotros',

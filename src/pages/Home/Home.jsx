@@ -30,14 +30,20 @@ const Home = ({ ...scrollToRef }) => {
     <div className="home">
       <div className="container">
         <div className="homeContent">
-          <h1 className="title">{data.homePage.title}</h1>
-          <p className="subtitle">{data.homePage.subtitle}</p>
-          <button
-            className="button"
-            onClick={() => scrollIntoView(scrollToRef.scrollToRef.contactRef)}
-          >
-            {data.homePage.button}
-          </button>
+          {data.homePage.carousel.map((item, idx) => (
+            <div className="item" key={idx}>
+              <h1 className="title">{item.title}</h1>
+              <p className="subtitle">{item.subtitle}</p>
+              <button
+                className="button"
+                onClick={() =>
+                  scrollIntoView(scrollToRef.scrollToRef.contactRef)
+                }
+              >
+                {item.button}
+              </button>
+            </div>
+          ))}
         </div>
       </div>
     </div>

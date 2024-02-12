@@ -1,0 +1,63 @@
+@import '../../helpers/colors.scss';
+
+.carousel {
+  .item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+    .title {
+      color: $a-white;
+      font-size: 40px;
+      font-weight: 400;
+      text-align: center;
+    }
+    .subtitle {
+      color: $a-white;
+      font-size: 22px;
+      font-weight: 200;
+      text-align: center;
+    }
+    .button {
+      padding: 10px;
+      background-color: $a-light-blue;
+      border: none;
+      border-radius: 10px;
+      width: 250px;
+      color: $a-white;
+      font-size: 18px;
+      font-weight: 500;
+      cursor: pointer;
+      &:hover {
+        background-color: $a-white;
+        color: $a-light-blue;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .carousel-root {
+    .carousel {
+      .slider-wrapper {
+        width: 950px;
+        .title {
+          width: 100%;
+        }
+        .subtitle {
+          width: 100%;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 950px) {
+  .carousel-root {
+    .carousel {
+      .slider-wrapper {
+        width: 850px;
+      }
+    }
+  }
+}
