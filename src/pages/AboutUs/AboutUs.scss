@@ -11,6 +11,10 @@
     flex-direction: row;
     height: 50vh;
     margin-top: 120px;
+    position: relative;
+    &.hidden {
+      display: none;
+    }
     .left {
       width: 50vw;
       padding-left: 100px;
@@ -33,15 +37,29 @@
       display: flex;
       justify-content: center;
       height: max-content;
+      position: relative;
       img {
         padding: 20px;
         height: 400px;
+      }
+      p {
+        position: absolute;
+        top: 30%;
+        background-color: $a-light-blue-transparent;
+        color: $a-black;
+        border-radius: 10px;
+        padding: 5px;
+        display: none;
       }
     }
   }
   .team {
     height: calc(50vh - 120px);
     min-height: fit-content;
+    background-color: $a-grey;
+  }
+  .team-expanded {
+    height: 100vh;
     background-color: $a-grey;
   }
 }
@@ -56,6 +74,9 @@
         justify-content: center;
         img {
           height: 450px;
+        }
+        p {
+          display: flex;
         }
       }
       .left {

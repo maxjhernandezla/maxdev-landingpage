@@ -8,7 +8,9 @@
   width: 100%;
   justify-content: space-around;
   cursor: pointer;
-
+  .icon {
+    display: none;
+  }
   .front {
     position: relative;
     img {
@@ -77,6 +79,21 @@
       &:hover .overlay {
         opacity: 1; // Mostrar al hacer hover
       }
+    }
+  }
+
+  &.expanded {
+    flex-direction: column;
+    position: relative;
+    .icon {
+      display: block;
+      padding: 10px;
+      background-color: $a-light-blue;
+      color: $a-black;
+      border-radius: 50%;
+      position: absolute;
+      right: 20px;
+      top: 20px;
     }
   }
 }

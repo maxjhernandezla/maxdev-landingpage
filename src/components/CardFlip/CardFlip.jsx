@@ -1,8 +1,9 @@
 import React, { useState } from 'react';
 import ReactCardFlip from 'react-card-flip';
 import './CardFlip.scss';
+import { FaTimes } from 'react-icons/fa';
 
-const CardFlip = ({ team }) => {
+const CardFlip = ({ team, showTeam, setShowTeam }) => {
   const [isFlipped, setIsFlipped] = useState(Array(team.length).fill(false));
 
   const handleFlip = (idx) => {
@@ -10,9 +11,15 @@ const CardFlip = ({ team }) => {
     newIsFlipped[idx] = !newIsFlipped[idx];
     setIsFlipped(newIsFlipped);
   };
+  const handleShow = () => {
+    setShowTeam(false);
+  };
 
   return (
-    <div className="flipCard">
+    <div className={showTeam ? 'flipCard expanded' : 'flipCard'}>
+      <div className="icon">
+        <FaTimes onTouchStart={handleShow} />
+      </div>
       {team.map((member, idx) => (
         <ReactCardFlip
           key={idx}
