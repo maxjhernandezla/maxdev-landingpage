@@ -30,6 +30,7 @@
         font-weight: 300;
         width: 100%;
         line-height: 1.3;
+        text-align: justify;
       }
     }
     .right {
@@ -48,7 +49,7 @@
         background-color: $a-light-blue-transparent;
         color: $a-black;
         border-radius: 10px;
-        padding: 5px;
+        padding: 15px;
         display: none;
       }
     }

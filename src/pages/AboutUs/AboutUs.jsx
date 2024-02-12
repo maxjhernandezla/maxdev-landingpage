@@ -27,12 +27,12 @@ const AboutUs = () => {
           <h2>{data.aboutUs.title}</h2>
           <p>{data.aboutUs.text}</p>
         </div>
-        <div className="right" onTouchStart={handleShowTeam}>
+        <div className="right">
           <img
             src="https://res.cloudinary.com/maxjhernandez/image/upload/v1706808586/Disen%CC%83o_sin_ti%CC%81tulo_17_jnxnjs.png"
             alt=""
           />
-          <p>Click to see de team</p>
+          <p onTouchStart={handleShowTeam}>Click to see de team</p>
         </div>
       </div>
       <div className={showTeam ? 'team-expanded' : 'team'}>

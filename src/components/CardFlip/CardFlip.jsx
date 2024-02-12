@@ -17,8 +17,8 @@ const CardFlip = ({ team, showTeam, setShowTeam }) => {
 
   return (
     <div className={showTeam ? 'flipCard expanded' : 'flipCard'}>
-      <div className="icon">
-        <FaTimes onTouchStart={handleShow} />
+      <div className="icon" onTouchStart={handleShow}>
+        <FaTimes />
       </div>
       {team.map((member, idx) => (
         <ReactCardFlip
