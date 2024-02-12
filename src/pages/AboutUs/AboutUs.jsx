@@ -10,7 +10,7 @@ const AboutUs = () => {
   const [ref, inView] = useInView({
     triggerOnce: true,
   });
-  console.log(data.aboutUs.team);
+
   return (
     <div className="aboutUs">
       <div className={`aboutUsContent ${inView ? 'visible' : ''}`} ref={ref}>

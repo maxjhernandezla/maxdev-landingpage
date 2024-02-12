@@ -11,10 +11,8 @@ const Home = ({ ...scrollToRef }) => {
     if (window.scrollY >= 100) {
       // Realiza alguna acción o cambia el estado aquí
       // Por ejemplo, setNavbar(true) si quieres cambiar el estado navbar
-      console.log('Se hizo scroll');
     } else {
       // Puedes realizar acciones adicionales cuando el desplazamiento sea menor a 100
-      console.log('Desplazamiento menor a 100');
     }
   };
 
@@ -25,7 +23,7 @@ const Home = ({ ...scrollToRef }) => {
       window.removeEventListener('scroll', handleScroll);
     };
   }, []);
-  console.log(scrollToRef);
+
   return (
     <div className="home">
       <div className="container">
