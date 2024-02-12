@@ -44,7 +44,7 @@ export const english = {
         alt: 'Pablo Cosentino',
       },
       {
-        name: 'Fabian Partinelli',
+        name: 'Fabian Parentelli',
         position: 'Fullstack Developer',
         src: 'https://res.cloudinary.com/maxjhernandez/image/upload/v1707753567/Disen%CC%83o_sin_ti%CC%81tulo_26_b1os8o.png',
       },
@@ -173,7 +173,7 @@ export const spanish = {
         alt: 'Pablo Cosentino',
       },
       {
-        name: 'Fabian Partinelli',
+        name: 'Fabian Parentelli',
         position: 'Fullstack Developer',
         src: 'https://res.cloudinary.com/maxjhernandez/image/upload/v1707753567/Disen%CC%83o_sin_ti%CC%81tulo_26_b1os8o.png',
       },

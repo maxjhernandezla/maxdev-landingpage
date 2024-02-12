@@ -6,10 +6,11 @@
   margin: 0;
   display: flex;
   flex-direction: column;
+  position: relative;
   .aboutUsContent {
     display: flex;
     flex-direction: row;
-    height: 50vh;
+    height: auto;
     margin-top: 120px;
     position: relative;
     &.hidden {
@@ -55,12 +56,14 @@
     }
   }
   .team {
-    height: calc(50vh - 120px);
-    min-height: fit-content;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    height: auto;
     background-color: $a-grey;
   }
   .team-expanded {
-    height: 100vh;
+    height: auto;
     background-color: $a-grey;
   }
 }

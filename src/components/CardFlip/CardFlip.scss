@@ -8,6 +8,9 @@
   width: 100%;
   justify-content: space-around;
   cursor: pointer;
+  min-height: auto;
+  margin-top: 15px;
+  padding-bottom: 15px;
   .icon {
     display: none;
   }
@@ -91,6 +94,7 @@
     height: max-content;
     display: flex;
     gap: 20px;
+    height: auto;
     .icon {
       display: block;
       color: $a-light-blue;
