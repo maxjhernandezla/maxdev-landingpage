@@ -28,13 +28,13 @@ const CardFlip = ({ team, showTeam, setShowTeam }) => {
         >
           <div onClick={() => handleFlip(idx)} className="front">
             <img src={member.src} alt={member.alt} />
-            <div className="overlay">Click to know me</div>
+            <div className="overlay">{member.clickFront}</div>
           </div>
           <div className="back" onClick={() => handleFlip(idx)}>
             <div className="backContainer">
               <h4>{member.name}</h4>
               <p>{member.position}</p>
-              <div className="overlay">Click to see me</div>
+              <div className="overlay">{member.clickBack}</div>
             </div>
           </div>
         </ReactCardFlip>

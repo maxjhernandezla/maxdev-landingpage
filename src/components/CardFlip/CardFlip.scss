@@ -91,10 +91,10 @@
     flex-direction: column;
     position: relative;
     margin-top: 100px;
-    height: max-content;
     display: flex;
     gap: 20px;
     height: auto;
+    min-height: 100%;
     .icon {
       display: block;
       color: $a-light-blue;
