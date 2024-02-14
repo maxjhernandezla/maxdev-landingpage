@@ -8,13 +8,14 @@
   background-repeat: no-repeat;
   background-position: center;
   background-attachment: fixed;
-  min-height: max-content;
+  min-height: 100%;
   .container {
     background-color: #00000030;
-    height: 100vh;
+    height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
+    min-height: 100vh;
     .homeContent {
       display: flex;
       flex-direction: column;
