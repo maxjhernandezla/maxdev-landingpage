@@ -31,8 +31,10 @@ const AboutUs = () => {
       >
         <div className="left">
           <h2>{data.aboutUs.title}</h2>
-          <p data-aos="fade-up">{data.aboutUs.text}</p>
+          <p data-aos="fade-right">{data.aboutUs.text}</p>
+          {/* <p>{data.aboutUs.text}</p> */}
         </div>
+        {/* <div className="right"> */}
         <div className="right" data-aos="fade-left">
           <img
             src="https://res.cloudinary.com/maxjhernandez/image/upload/v1706808586/Disen%CC%83o_sin_ti%CC%81tulo_17_jnxnjs.png"

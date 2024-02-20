@@ -1,6 +1,7 @@
 @import '../../helpers/colors.scss';
 
 .aboutUs {
+  overflow-x: hidden;
   background-color: $a-light-blue;
   margin: 0;
   display: flex;
@@ -18,7 +19,7 @@
       display: none;
     }
     .left {
-      width: 50vw;
+      width: 50%;
       padding-left: 100px;
       display: flex;
       flex-direction: column;
@@ -37,12 +38,13 @@
       }
     }
     .right {
-      width: 50vw;
+      width: 50%;
       display: flex;
       justify-content: center;
       height: max-content;
       position: relative;
       height: 100%;
+      align-items: center;
       img {
         padding: 20px;
         height: 400px;
