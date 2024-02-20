@@ -1,14 +1,22 @@
 import './Services.scss';
 import { getLanguageData } from '../../helpers/languageHelper';
+import Aos from 'aos';
+import 'aos/dist/aos.css';
+import { useEffect } from 'react';
+
 const Services = () => {
+  useEffect(() => {
+    Aos.init({ duration: 2000 });
+  }, []);
+
   const data = getLanguageData();
   return (
     <div className="services">
-      <div className="servicesTitle">
+      <div data-aos="fade-up" className="servicesTitle">
         <h2>{data.services.title}</h2>
       </div>
       <div className="servicesContent">
-        <div className="left">
+        <div data-aos="fade-right" className="left">
           {data.services.servicesLeft.map((item, idx) => (
             <div className="service" key={idx}>
               <div className="imgContainer">
@@ -24,7 +32,7 @@ const Services = () => {
             </div>
           ))}
         </div>
-        <div className="right">
+        <div data-aos="fade-left" className="right">
           {data.services.servicesRight.map((item, idx) => (
             <div className="service" key={idx}>
               <div className="imgContainer">

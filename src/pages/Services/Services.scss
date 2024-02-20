@@ -28,6 +28,7 @@
     height: auto;
     margin-bottom: 50px;
     .left {
+      // animation: slideInLeft 1s ease forwards;
       .service {
         display: flex;
         flex-direction: row;
@@ -54,6 +55,7 @@
     }
 
     .right {
+      // animation: slideInRight 1s ease forwards;
       .service {
         display: flex;
         flex-direction: row-reverse;
@@ -126,5 +128,27 @@
         }
       }
     }
+  }
+}
+
+@keyframes slideInRight {
+  from {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideInLeft {
+  from {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
   }
 }
