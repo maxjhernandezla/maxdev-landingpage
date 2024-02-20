@@ -49,7 +49,7 @@ const Contact = () => {
                 id="message"
                 cols="30"
                 rows="10"
-                className="input"
+                className="input textarea"
                 placeholder={data.contact.message}
               ></textarea>
               <button type="submit" className="submitBtn">

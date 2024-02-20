@@ -75,6 +75,9 @@
             border: none;
             border-radius: 5px;
             color: $a-black;
+            &.textarea {
+              resize: none;
+            }
           }
           .submitBtn {
             padding: 10px;
