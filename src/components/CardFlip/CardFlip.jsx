@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import ReactCardFlip from 'react-card-flip';
 import './CardFlip.scss';
 import { FaTimes } from 'react-icons/fa';
+import { IoCloseCircle } from 'react-icons/io5';
 
 const CardFlip = ({ team, showTeam, setShowTeam }) => {
   const [isFlipped, setIsFlipped] = useState(Array(team.length).fill(false));
@@ -18,7 +19,7 @@ const CardFlip = ({ team, showTeam, setShowTeam }) => {
   return (
     <div className={showTeam ? 'flipCard expanded' : 'flipCard'}>
       <div className="icon" onTouchStart={handleShow}>
-        <FaTimes />
+        <IoCloseCircle />
       </div>
       {team.map((member, idx) => (
         <ReactCardFlip

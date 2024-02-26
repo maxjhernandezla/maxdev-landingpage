@@ -98,15 +98,18 @@
     .icon {
       display: block;
       color: $a-light-blue;
-      border: 3px solid $a-light-blue;
+      // border: 3px solid $a-light-blue;
       border-radius: 10px;
       position: absolute;
       right: 20px;
       top: -50px;
       padding: 10px;
+
       svg {
         padding: 0;
         margin: 0;
+        height: 30px !important;
+        width: 30px;
       }
     }
     .front {
