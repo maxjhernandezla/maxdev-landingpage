@@ -5,14 +5,14 @@ import 'aos/dist/aos.css';
 import { useEffect } from 'react';
 
 const Services = () => {
-  // useEffect(() => {
-  //   Aos.init({ duration: 2000 });
-  // }, []);
+  useEffect(() => {
+    Aos.init({ duration: 2000, once: true });
+  }, []);
 
   const data = getLanguageData();
   return (
     <div className="services">
-      <div data-aos="fade-down" className="servicesTitle">
+      <div className="servicesTitle">
         <h2>{data.services.title}</h2>
       </div>
       <div className="servicesContent">

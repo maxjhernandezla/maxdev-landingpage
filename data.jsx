@@ -34,7 +34,7 @@ export const english = {
       {
         name: 'Maximo Hernandez',
         position: 'Fullstack Developer',
-        src: 'https://res.cloudinary.com/maxjhernandez/image/upload/v1707753769/Disen%CC%83o_sin_ti%CC%81tulo_27_ppcof7.png',
+        src: 'https://res.cloudinary.com/maxjhernandez/image/upload/v1708965934/Disen%CC%83o_sin_ti%CC%81tulo_30_orucj7.png',
         alt: 'Maximo Hernandez',
         clickFront: 'Click to know me',
         clickBack: 'Click to see me',
@@ -42,7 +42,7 @@ export const english = {
       {
         name: 'Pablo Cosentino',
         position: 'Web Designer',
-        src: 'https://res.cloudinary.com/maxjhernandez/image/upload/v1707753451/Disen%CC%83o_sin_ti%CC%81tulo_25_ax9fz7.png',
+        src: 'https://res.cloudinary.com/maxjhernandez/image/upload/v1708965938/Disen%CC%83o_sin_ti%CC%81tulo_31_yoqdxk.png',
         alt: 'Pablo Cosentino',
         clickFront: 'Click to know me',
         clickBack: 'Click to see me',
@@ -50,7 +50,7 @@ export const english = {
       {
         name: 'Fabian Parentelli',
         position: 'Fullstack Developer',
-        src: 'https://res.cloudinary.com/maxjhernandez/image/upload/v1707753567/Disen%CC%83o_sin_ti%CC%81tulo_26_b1os8o.png',
+        src: 'https://res.cloudinary.com/maxjhernandez/image/upload/v1708965930/Disen%CC%83o_sin_ti%CC%81tulo_29_ldsofo.png',
         clickFront: 'Click to know me',
         clickBack: 'Click to see me',
       },
@@ -169,7 +169,7 @@ export const spanish = {
       {
         name: 'Maximo Hernandez',
         position: 'Fullstack Developer',
-        src: 'https://res.cloudinary.com/maxjhernandez/image/upload/v1707753769/Disen%CC%83o_sin_ti%CC%81tulo_27_ppcof7.png',
+        src: 'https://res.cloudinary.com/maxjhernandez/image/upload/v1708965934/Disen%CC%83o_sin_ti%CC%81tulo_30_orucj7.png',
         alt: 'Maximo Hernandez',
         clickFront: 'Click to know me',
         clickBack: 'Click to see me',
@@ -177,7 +177,7 @@ export const spanish = {
       {
         name: 'Pablo Cosentino',
         position: 'Web Designer',
-        src: 'https://res.cloudinary.com/maxjhernandez/image/upload/v1707753451/Disen%CC%83o_sin_ti%CC%81tulo_25_ax9fz7.png',
+        src: 'https://res.cloudinary.com/maxjhernandez/image/upload/v1708965938/Disen%CC%83o_sin_ti%CC%81tulo_31_yoqdxk.png',
         alt: 'Pablo Cosentino',
         clickFront: 'Click to know me',
         clickBack: 'Click to see me',
@@ -185,7 +185,7 @@ export const spanish = {
       {
         name: 'Fabian Parentelli',
         position: 'Fullstack Developer',
-        src: 'https://res.cloudinary.com/maxjhernandez/image/upload/v1707753567/Disen%CC%83o_sin_ti%CC%81tulo_26_b1os8o.png',
+        src: 'https://res.cloudinary.com/maxjhernandez/image/upload/v1708965930/Disen%CC%83o_sin_ti%CC%81tulo_29_ldsofo.png',
         clickFront: 'Click to know me',
         clickBack: 'Click to see me',
       },
