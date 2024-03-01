@@ -30,6 +30,8 @@ export const english = {
     title: 'About us',
     topTitle: 'Purpose and strategic objectives',
     text: 'Welcome to MAXDEV, where experience and innovation converge to bring your digital ideas to life. With a strong track record, our collaborative team is dedicated to merging expertise with creativity in every web development project. From meticulous design to efficient development, at MAXDEV, we craft bespoke solutions that mirror the essence of your vision.',
+    seeTeam: 'Click to see the team',
+
     team: [
       {
         name: 'Maximo Hernandez',
@@ -165,6 +167,7 @@ export const spanish = {
     title: 'Nosotros',
     topTitle: 'Propósito y objetivos estratégicos',
     text: 'Bienvenido a MAXDEV, donde la experiencia y la innovación convergen para dar vida a tus ideas digitales. Con una sólida trayectoria, nuestro equipo colaborativo se dedica a fusionar la experiencia con la creatividad en cada proyecto de desarrollo web. Desde el diseño meticuloso hasta el desarrollo eficiente, en MAXDEV creamos soluciones a medida que reflejan la esencia de tu visión.',
+    seeTeam: 'Clickea para ver el equipo',
     team: [
       {
         name: 'Maximo Hernandez',

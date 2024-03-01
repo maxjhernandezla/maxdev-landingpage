@@ -40,7 +40,7 @@ const AboutUs = () => {
             src="https://res.cloudinary.com/maxjhernandez/image/upload/v1706808586/Disen%CC%83o_sin_ti%CC%81tulo_17_jnxnjs.png"
             alt=""
           />
-          <p onTouchStart={handleShowTeam}>Click to see de team</p>
+          <p onTouchStart={handleShowTeam}>{data.aboutUs.seeTeam}</p>
         </div>
       </div>
       <div className={showTeam ? 'team-expanded' : 'team'}>

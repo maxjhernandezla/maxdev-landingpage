@@ -42,21 +42,21 @@
       display: flex;
       justify-content: center;
       height: max-content;
-      position: relative;
       height: 100%;
       align-items: center;
+      flex-direction: column;
       img {
         padding: 20px;
         height: 400px;
       }
       p {
-        position: absolute;
-        top: 30%;
-        background-color: $a-light-blue-transparent;
-        color: $a-black;
+        background-color: $a-black;
+        color: $a-light-blue;
         border-radius: 10px;
-        padding: 15px;
+        padding: 10px;
         display: none;
+        margin-bottom: 15px;
+        font-weight: 500;
       }
     }
   }
