@@ -44,7 +44,7 @@ export const english = {
       {
         name: 'Pablo Cosentino',
         position: 'Web Designer',
-        src: 'https://res.cloudinary.com/maxjhernandez/image/upload/v1708965938/Disen%CC%83o_sin_ti%CC%81tulo_31_yoqdxk.png',
+        src: 'https://res.cloudinary.com/maxjhernandez/image/upload/v1709753806/Disen%CC%83o_sin_ti%CC%81tulo_43_bjsbe3.png',
         alt: 'Pablo Cosentino',
         clickFront: 'Click to know me',
         clickBack: 'Click to see me',
@@ -180,7 +180,7 @@ export const spanish = {
       {
         name: 'Pablo Cosentino',
         position: 'Web Designer',
-        src: 'https://res.cloudinary.com/maxjhernandez/image/upload/v1708965938/Disen%CC%83o_sin_ti%CC%81tulo_31_yoqdxk.png',
+        src: 'https://res.cloudinary.com/maxjhernandez/image/upload/v1709753806/Disen%CC%83o_sin_ti%CC%81tulo_43_bjsbe3.png',
         alt: 'Pablo Cosentino',
         clickFront: 'Click to know me',
         clickBack: 'Click to see me',
